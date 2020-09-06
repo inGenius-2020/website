@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/bootstrap-social.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+  <link rel="stylesheet" href="css/animated_navbar.css" />
     <title>inGenius | #GetSetHack</title>
 </head>
 
@@ -30,59 +31,45 @@
       <div id="loader"></div>
         <div class="loader-section section-left"></div>
         <div class="loader-section section-right"></div>
-
   </div>
-	<div id="content">
-		<div id='stars'></div>
-		<div id='stars2'></div>
-		<div id='stars3'></div>
-		<div id="title">
 
-		<div class="container sticky-top navbar-conatiner">
-		<div class="card bg-dark rounded">
-			<nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
-				<div class="container" style="bg:#e6d2e7">
-					<a class="brand-title js-scrool-trigger" href="#">
-						<img src="img/navbar_logo.png" alt="inGenius logo">
-					</a>
-					<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-					data-target="#navbarResponsive" aria-controls="navbarResponsive"
-					aria-expand="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-					<div class="collapse navbar-collapse" id="navbarResponsive">
-						<ul class="navbar-nav ml-auto">
-							<li class="nav-item">
-								<a class="nav-link js-scroll-trigger text-white" href="#about">About</a>
-								<hr style="margin-top: 0; margin-bottom: 0">
-							</li>
-							<li class="nav-item">
-								<a class="nav-link js-scroll-trigger text-white" href="#events">Events</a>
-								<hr style="margin-top: 0; margin-bottom: 0">
-							</li>
-							<li class="nav-item">
-								<a class="nav-link js-scroll-trigger text-white" href="#sponsors">Sponsors</a>
-								<hr style="margin-top: 0; margin-bottom: 0">
-							</li>
-							<li class="nav-item">
-								<a class="nav-link js-scroll-trigger text-white" href="#about">Team/Gallery</a>
-								<hr style="margin-top: 0; margin-bottom: 0">
-							</li>
-							<li class="nav-item">
-								<a class="nav-link js-scroll-trigger text-white" href="#faq">FAQs</a>
-								<hr style="margin-top: 0; margin-bottom: 0">
-							</li>
-							<li class="nav-item">
-								<a class="nav-link js-scroll-trigger text-white" href="#about">Contact US</a>
-								<hr style="margin-top: 0; margin-bottom: 0">
-							</li>
-						</ul>
-					</div>
-				</div>
-				</div>
-			</nav>
-		</div>
+  <!--navbar-->
+  <nav class="nav navbar navbar-expand-lg">
+  <a class="navbar-brand logo ml-5" href="#"><img src="img/inGen20Logo_C-01.png" class="img-fluid img-thumbnail" width=100px height=35px /></a>
+  <span class="navTrigger">
+                  <i></i>
+                  <i></i>
+                  <i></i>
+  </span>
+<div class="main_list ml-auto" id="mainListDiv">
+<div class="container black topBotomBordersIn">
+    <ul class="navbar-nav navlinks">
+    <li class="nav-item">
+    <a href="#about">About</a>
+    </li>
+    <li class="nav-item">
+    <a href="#events">Events</a>
+    </li>
+    <li class="nav-item">
+    <a href="#faq">FAQs</a>
+    </li>
+    <li class="nav-item">
+    <a href="#sponsors">Sponsors</a>
+    </li>
+    <li class="nav-item">
+    <a href="#contact">Contact Us</a>
+  </li>
+</div>
+</div>
+</nav>
+ <!--navbar-->
 
+      <div id="content">
+        <div id='stars'></div>
+        <div id='stars2'></div>
+        <div id='stars3'></div>
+        <div id="title"></div>
+      </div>
 		<svg class="hackathon" viewBox="0 0 842 539" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1.5">
   <g class="Grass">
     <path fill="#151965" d="M0 0h842v107.7H0z" />
@@ -280,7 +267,7 @@
 			</div>
 
 		</section>
-		<section id="events" ">
+		<section id="events">
 			<div class="container animate__animated animate__fadeIn	">
 			<img class="card-body" src="img/see you soon.png" alt="event timeline">
 				<a class="brand-title js-scrool-trigger" href="#">
@@ -314,12 +301,7 @@
 	<script src="index.js"></script>
 	<script src="landing.js"></script>
 	<script src="buttonup.js"></script>
+  <script src="animated_navbar.js"></script
 
-	</script>
-
-	</script>
-
-
-	</script>
 </body>
 </html>

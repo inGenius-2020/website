@@ -1,33 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
+html,
 body {
-  position: relative;
-  min-height: 100%;
-  margin: 0;
-  background-color: #0F1623;
-  font-family: 'Work Sans', sans-serif;
-  font-weight: 500;
-  overflow-x: hidden;
-  overflow-y: scroll;
+    position: :relative;
+    background-color: #0F1623;
+    font-family: "Quicksand", sans-serif;
+    font-size: 62.5%;
+    font-size: 10px;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
-
-
-nav span{
-	margin-left: 16px;
-	background-color: #e6d2e7;
-}
-.navbar-container .navbar .brand-title{
-	font-size: 18px;
-	font-weight: 700;
-	color: #fff;
-}
-.navbar-container .navbar .brand-title span{margin-left:16px}
-.navbar-container .navbar .brand-title:hover{text-decoration:none}
-.navbar-container .navbar .nav-item{
-	margin:0 4px;padding:0 4px;border-radius:3px;text-transform:uppercase;-webkit-transition:background-color .2s ease-in;-o-transition:background-color .2s ease-in;transition:background-color .2s ease-in}
-.navbar-container .navbar .nav-item:hover{background-color:#e6d2e7}.navbar-container .navbar .nav-item .nav-link{font-weight:700;font-size:16px}
-.navbar-container .navbar .nav-item .nav-link.active,.navbar-container .navbar .nav-item .nav-link.focus{color:#8166cd}
-.navbar-container .navbar .nav-item .nav-link:hover{color:#312457}.navbar-container .navbar .navbar-toggler{border:none}
-.navbar-container .navbar .navbar-toggler:hover{background-color:#e6d2e7}@media (max-width:991px){.navbar-container .navbar .navbar-nav{padding:16px;border-radius:10px;background-color:#fff}.navbar-container .navbar .nav-link{padding:16px;font-size:24px}.navbar-container .navbar #navbarResponsive{position:absolute;width:100%;top:calc(100% - 16px);left:0}.navbar-container .navbar #navbarResponsive:after{content:"";position:absolute;top:0;left:0;width:100%;height:100%;z-index:-1;-webkit-box-shadow:0 2px 10px 0 rgba(0,0,0,.1);box-shadow:0 2px 10px 0 rgba(0,0,0,.1);border-radius:10px}
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
 #links {
@@ -163,8 +145,6 @@ nav span{
     right: 0;
 }
 
-
-
 /* Loaded */
 .loaded #loader-wrapper .loader-section.section-left {
     -webkit-transform: translateX(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
@@ -181,7 +161,6 @@ nav span{
    -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
            transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
 }
-
 
 .loaded #loader {
     opacity: 0;
