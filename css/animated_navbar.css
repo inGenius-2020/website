@@ -121,7 +121,7 @@ div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after
         overflow: hidden;
     }
     .nav div.show_list {
-      height:auto;
+      height: auto;
       display: none;
     }
     .nav div.main_list ul {
