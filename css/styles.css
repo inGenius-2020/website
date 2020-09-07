@@ -2,13 +2,14 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
 html,
 body {
-    position: :relative;
+    position: relative;
+    width:100%;
     background-color: #0F1623;
     font-family: "Quicksand", sans-serif;
     font-size: 62.5%;
     font-size: 10px;
-    height:5000px;
-    overflow-y: scroll;
+    height:auto;
+    /*overflow-y: scroll;*/
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
@@ -320,7 +321,8 @@ HTML CSSResult
 }
 
 body {
-  margin: 0;
+  margin: auto;
+  padding:auto;
   background-color: #060C1F;
   font-family: 'Almarai', sans-serif;
 }
