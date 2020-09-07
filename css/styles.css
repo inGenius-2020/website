@@ -7,7 +7,7 @@ body {
     font-family: "Quicksand", sans-serif;
     font-size: 62.5%;
     font-size: 10px;
-    overflow-x: hidden;
+    height:5000px;
     overflow-y: scroll;
 }
 

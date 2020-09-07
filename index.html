@@ -3,8 +3,6 @@
 
 <head>
 	<!-- Required meta tags always come first -->
-
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -12,7 +10,7 @@
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ==" crossorigin="anonymous" />
 	<link rel="stylesheet" href ="css/button.css" />
-	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 	<link rel="stylesheet" href="/faq-template-master/assets/css/style.css">
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
@@ -21,7 +19,7 @@
 	<link href="css/ingenious.css" rel="stylesheet">
 
   <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/bootstrap-social.css">
+	<link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
   <link rel="stylesheet" href="css/animated_navbar.css" />
     <title>inGenius | #GetSetHack</title>
@@ -66,7 +64,7 @@
 </nav>
  <!--navbar-->
 
-      <div id="content">
+      <div id="content" onscroll="console.log('content');">
         <div id='stars'></div>
         <div id='stars2'></div>
         <div id='stars3'></div>
@@ -176,10 +174,10 @@
 			<br></br>
 				<div class="row">
 					<div class="offset-sm-1 col-sm-4 col-12 organizers-frame">
-						<img class="rounded" src="img/ieee.png" alt="IEEE PESIT">
+						<img class="rounded img-fluid" src="img/ieee.png" alt="IEEE PESIT"/>
 					</div>
 					<div class=" col-sm-4 col-12 organizers-frame">
-						<img class="rounded" src="img/acm.png" alt="ACM PESU">
+						<img class="rounded img-fluid" src="img/acm.png" alt="ACM PESU"/>
 					</div>
 				</div>
 			</div>
@@ -187,7 +185,7 @@
 
 		<section class="bg animate__animated animate__backInRight"  id="faq" style="background-image: url('img/faq.jpg'); color: white;">
 			<div class="container">
-				At inGenius we strive to bring together developers to participate in the hackathon irrespective of
+				<p>At inGenius we strive to bring together developers to participate in the hackathon irrespective of
 				gender,racec socioeconomic backgroung or ethenticity. We ususally try to keep things simple. Read our FAQs to phase out ambiguity."
 				</p>
 			</div>
@@ -287,12 +285,10 @@
     <li><a href=""><i class="fa fa-youtube"></i></a></li>
     <li><a href=""><i class="fa fa-linkedin"></i></a></li>
   </ul>
-</div>
-</div>
+  </div>
 <button id="btn-go-to-up" class="btn-go-to-up" title="Go To Top">
 	<i class="fa fa-hand-o-up icon-go-to-up" aria-hidden="true"></i>
 </button>
-</div>
 		<!-- jQuery first, then Tether, then Bootstrap JS. -->
 		<script src="node_modules/jquery/dist/jquery.min.js"></script>
 		<script src="node_modules/tether/dist/js/tether.min.js"></script>
@@ -302,14 +298,12 @@
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 		<script src="/faq-template-masterassets/js/util.js"></script> <!-- util functions included in the CodyHouse framework -->
 		<script src="/faq-template-masterassets/js/main.js"></script>
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+  	<script src="index.js"></script>
+	  <script src="landing.js"></script>
+	  <script src="buttonup.js"></script>
+    <script src="animated_navbar.js"></script
 
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
-	<script src="index.js"></script>
-	<script src="landing.js"></script>
-	<script src="buttonup.js"></script>
-  <script src="animated_navbar.js"></script
-
-</body>
+  </body>
 </html>

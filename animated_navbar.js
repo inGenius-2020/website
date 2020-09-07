@@ -12,10 +12,10 @@
       $('.navTrigger').toggleClass('active');
 
   });
-  $(window).scroll(function() {
-          if ($(document).scrollTop() > 50) {
+  $(body).scroll(function() {
+          if ($(body).scrollTop() > 50) {
               $('.nav').addClass('affix');
-              //console.log("OK");
+              console.log("OK");
           } else {
               $('.nav').removeClass('affix');
           }
