@@ -8,7 +8,7 @@ body {
     font-size: 62.5%;
     font-size: 10px;
     overflow-x: hidden;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
