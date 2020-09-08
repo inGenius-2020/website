@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
-html,
-body {
+html{
+  scroll-behavior: smooth;
+}
+html, body{
     position: relative;
     width:100%;
     background-color: #0F1623;
@@ -11,7 +13,6 @@ body {
     height:auto;
     /*overflow-y: scroll;*/
 }
-
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
 #links {
     max-width: 500px;
@@ -290,6 +291,7 @@ button {
 	height: 3em;
 	line-height: 3em;
 	position: fixed;
+  display:none;
 	right: 0.5em;
 	text-align: center;
 	transition-duration: 0.3s;
