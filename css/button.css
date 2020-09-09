@@ -1,5 +1,8 @@
 .social-menu ul {
-  display: flex;
+  display: flex;  
+  margin: 0 auto;
+  padding-left: 38%;
+  padding-bottom: 5%;
 }
 .social-menu ul li {
   list-style: none;
@@ -43,4 +46,8 @@
 }
 .social-menu ul li:nth-child(5) a:hover {
   background-color: #0077B5;
+}
+.social-menu span{
+  padding-bottom: 50px;
+  margin: 0 auto;
 }
