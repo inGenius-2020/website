@@ -216,3 +216,11 @@
       width: 17em;
     }
   }
+
+  @media (max-width: 1028px){
+    #toremove{
+      display: none;
+    }
+  }
+
+  
