@@ -347,12 +347,9 @@ div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after
   border:0px;
 }
 
-.nav-item{
-  padding:30px;
-}
 
 @media only screen and (max-width: 760px) {
-  .nav-item { border-bottom: 1px solid white}
+  .nav-item { border-bottom: 1px solid white; padding:15px;}
     html {
     overflow-x: hidden; }
   }
