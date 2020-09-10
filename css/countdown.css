@@ -1,0 +1,423 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee&family=Codystar:wght@300;400&family=Darker+Grotesque:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+:root {
+  --light_col: #00cccc;
+  --letter_border: #4bc7cf;
+  --flick_color: #a0e6ff;
+}
+
+
+
+#main {
+  width: 100vw;
+  background: #2b2b2b;
+  font-family: "Bungee", cursive;
+}
+
+#main1 {
+  width: 100vw;
+  background: #2b2b2b;
+  font-family: "Bungee", cursive;
+  height: 220px;
+}
+
+#clock span {
+  background-color: #2b2b2b;
+  float: left;
+  text-align: center;
+  font-size: 6vw;
+  margin: 0 2.5%;
+  color: #fdf5e6;
+  padding: 20px;
+  width: 20%;
+  border-radius: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 0.75rem 0.5rem -0.5rem hsl(0, 10%, 10%);
+}
+
+#clock::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#display span {
+  text-align: center;
+  height: 2vw;
+  margin-top: 30px;
+  color: #ddd;
+  text-transform: uppercase;
+  font-size: 2vw;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 1px rgba(10, 10, 10, 0.7);
+}
+
+#display span:nth-child(1) {
+  position: absolute;
+  left: 10%;
+  margin-top: -0.1%;
+}
+
+#display span:nth-child(2) {
+  position: absolute;
+  left: 35%;
+  margin-top: -0.1%;
+}
+
+#display span:nth-child(3) {
+  position: absolute;
+  left: 59%;
+  margin-top: -0.1%;
+}
+
+#display span:nth-child(4) {
+  position: absolute;
+  left: 84%;
+  margin-top: -0.1%;
+}
+
+span.flip {
+  animation: flip 0.7s ease forwards;
+}
+
+@keyframes flip {
+  0% {
+    transform: rotateX(0deg);
+  }
+
+  100% {
+    transform: rotateX(360deg);
+  }
+}
+
+#sign {
+  display: block;
+  width: 95%;
+  margin: auto;
+  padding-top: 9rem;
+}
+
+#sign_text {
+  color: var(--light_col);
+  border: 6px solid var(--light_col);
+  padding: 0.3em 0.3em 0.3em 0.3em;
+  border-radius: 15px;
+  font-size: 5.5vw;
+  text-align: center;
+  font-family: "Codystar", cursive;
+  font-weight: 300;
+  text-shadow: 0px 0px 20px var(--light_col), -1px 0 var(--letter_border),
+    0 1px var(--letter_border), 1px 0 var(--letter_border),
+    0 -1px var(--letter_border);
+  animation: pulse 4s ease-in-out infinite;
+}
+
+.sign_letter {
+  margin-left: -5px;
+}
+
+.sl1 {
+  animation: flicker_v1 6s linear infinite;
+}
+.sl2 {
+  animation: flicker_v3 7s linear infinite;
+}
+.sl3 {
+  animation: flicker_v2 8s linear infinite;
+}
+.sl4 {
+  animation: flicker_v4 9s linear infinite;
+}
+
+@keyframes flicker_v1 {
+  0% {
+    color: var(--light_col);
+    text-shadow: 0px 0px 20px var(--light_col), -1px 0 var(--letter_border),
+      0 1px var(--letter_border), 1px 0 var(--letter_border),
+      0 -1px var(--letter_border);
+  }
+  30% {
+    color: var(--light_col);
+    text-shadow: 0px 0px 20px var(--light_col), -1px 0 var(--letter_border),
+      0 1px var(--letter_border), 1px 0 var(--letter_border),
+      0 -1px var(--letter_border);
+  }
+  31% {
+    color: #a0e6ff;
+    text-shadow: 0px 0px 0px var(--light_col), -1px 0 var(--letter_border),
+      0 1px var(--letter_border), 1px 0 var(--letter_border),
+      0 -1px var(--letter_border);
+  }
+  36% {
+    color: #a0e6ff;
+    text-shadow: 0px 0px 0px var(--light_col), -1px 0 var(--letter_border),
+      0 1px var(--letter_border), 1px 0 var(--letter_border),
+      0 -1px var(--letter_border);
+  }
+  37% {
+    color: var(--light_col);
+    text-shadow: 0px 0px 20px var(--light_col), -1px 0 var(--letter_border),
+      0 1px var(--letter_border), 1px 0 var(--letter_border),
+      0 -1px var(--letter_border);
+  }
+  41% {
+    color: var(--light_col);
+    text-shadow: 0px 0px 20px var(--light_col), -1px 0 var(--letter_border),
+      0 1px var(--letter_border), 1px 0 var(--letter_border),
+      0 -1px var(--letter_border);
+  }
+  42% {
+    color: var(--flick_color);
+    text-shadow: 0px 0px 0px var(--light_col), -1px 0 var(--letter_border),
+      0 1px var(--letter_border), 1px 0 var(--letter_border),
+      0 -1px var(--letter_border);
+  }
+  45% {
+    color: var(--flick_color);
+    text-shadow: 0px 0px 0px var(--light_col), -1px 0 var(--letter_border),
+      0 1px var(--letter_border), 1px 0 var(--letter_border),
+      0 -1px var(--letter_border);
+  }
+  46% {
+    color: var(--light_col);
+    text-shadow: 0px 0px 20px var(--light_col), -1px 0 var(--letter_border),
+      0 1px var(--letter_border), 1px 0 var(--letter_border),
+      0 -1px var(--letter_border);
+  }
+  100% {
+    color: var(--light_col);
+    text-shadow: 0px 0px 20px var(--light_col), -1px 0 var(--letter_border),
+      0 1px var(--letter_border), 1px 0 var(--letter_border),
+      0 -1px var(--letter_border);
+  }
+}
+
+@keyframes flicker_v2 {
+  0% {
+    color: var(--light_col);
+    text-shadow: 0px 0px 20px var(--light_col), -1px 0 var(--letter_border),
+      0 1px var(--letter_border), 1px 0 var(--letter_border),
+      0 -1px var(--letter_border);
+  }
+  30% {
+    color: var(--light_col);
+    text-shadow: 0px 0px 20px var(--light_col), -1px 0 var(--letter_border),
+      0 1px var(--letter_border), 1px 0 var(--letter_border),
+      0 -1px var(--letter_border);
+  }
+  31% {
+    color: var(--flick_color);
+    text-shadow: 0px 0px 0px var(--light_col), -1px 0 var(--letter_border),
+      0 1px var(--letter_border), 1px 0 var(--letter_border),
+      0 -1px var(--letter_border);
+  }
+  32% {
+    color: var(--flick_color);
+    text-shadow: 0px 0px 0px var(--light_col), -1px 0 var(--letter_border),
+      0 1px var(--letter_border), 1px 0 var(--letter_border),
+      0 -1px var(--letter_border);
+  }
+  33% {
+    color: var(--light_col);
+    text-shadow: 0px 0px 20px var(--light_col), -1px 0 var(--letter_border),
+      0 1px var(--letter_border), 1px 0 var(--letter_border),
+      0 -1px var(--letter_border);
+  }
+  41% {
+    color: var(--light_col);
+    text-shadow: 0px 0px 20px var(--light_col), -1px 0 var(--letter_border),
+      0 1px var(--letter_border), 1px 0 var(--letter_border),
+      0 -1px var(--letter_border);
+  }
+  42% {
+    color: var(--flick_color);
+    text-shadow: 0px 0px 0px var(--light_col), -1px 0 var(--letter_border),
+      0 1px var(--letter_border), 1px 0 var(--letter_border),
+      0 -1px var(--letter_border);
+  }
+  43% {
+    color: var(--flick_color);
+    text-shadow: 0px 0px 0px var(--light_col), -1px 0 var(--letter_border),
+      0 1px var(--letter_border), 1px 0 var(--letter_border),
+      0 -1px var(--letter_border);
+  }
+  44% {
+    color: var(--light_col);
+    text-shadow: 0px 0px 20px var(--light_col), -1px 0 var(--letter_border),
+      0 1px var(--letter_border), 1px 0 var(--letter_border),
+      0 -1px var(--letter_border);
+  }
+  50% {
+    color: var(--light_col);
+    text-shadow: 0px 0px 20px var(--light_col), -1px 0 var(--letter_border),
+      0 1px var(--letter_border), 1px 0 var(--letter_border),
+      0 -1px var(--letter_border);
+  }
+  51% {
+    color: var(--letter_border);
+    text-shadow: 0px 0px 0px var(--light_col), -1px 0 var(--letter_border),
+      0 1px var(--letter_border), 1px 0 var(--letter_border),
+      0 -1px var(--letter_border);
+  }
+  54% {
+    color: var(--letter_border);
+    text-shadow: 0px 0px 0px var(--light_col), -1px 0 var(--letter_border),
+      0 1px var(--letter_border), 1px 0 var(--letter_border),
+      0 -1px var(--letter_border);
+  }
+  55% {
+    color: var(--light_col);
+    text-shadow: 0px 0px 20px var(--light_col), -1px 0 var(--letter_border),
+      0 1px var(--letter_border), 1px 0 var(--letter_border),
+      0 -1px var(--letter_border);
+  }
+  100% {
+    color: var(--light_col);
+    text-shadow: 0px 0px 20px var(--light_col), -1px 0 var(--letter_border),
+      0 1px var(--letter_border), 1px 0 var(--letter_border),
+      0 -1px var(--letter_border);
+  }
+}
+
+@keyframes flicker_v3 {
+  0% {
+    color: var(--light_col);
+    text-shadow: 0px 0px 20px var(--light_col), -1px 0 var(--letter_border),
+      0 1px var(--letter_border), 1px 0 var(--letter_border),
+      0 -1px var(--letter_border);
+  }
+  60% {
+    color: var(--light_col);
+    text-shadow: 0px 0px 20px var(--light_col), -1px 0 var(--letter_border),
+      0 1px var(--letter_border), 1px 0 var(--letter_border),
+      0 -1px var(--letter_border);
+  }
+  61% {
+    color: var(--flick_color);
+    text-shadow: 0px 0px 0px var(--light_col), -1px 0 var(--letter_border),
+      0 1px var(--letter_border), 1px 0 var(--letter_border),
+      0 -1px var(--letter_border);
+  }
+  66% {
+    color: var(--flick_color);
+    text-shadow: 0px 0px 0px var(--light_col), -1px 0 var(--letter_border),
+      0 1px var(--letter_border), 1px 0 var(--letter_border),
+      0 -1px var(--letter_border);
+  }
+  67% {
+    color: var(--light_col);
+    text-shadow: 0px 0px 20px var(--light_col), -1px 0 var(--letter_border),
+      0 1px var(--letter_border), 1px 0 var(--letter_border),
+      0 -1px var(--letter_border);
+  }
+  100% {
+    color: var(--light_col);
+    text-shadow: 0px 0px 20px var(--light_col), -1px 0 var(--letter_border),
+      0 1px var(--letter_border), 1px 0 var(--letter_border),
+      0 -1px var(--letter_border);
+  }
+}
+
+@keyframes flicker_v4 {
+  0% {
+    color: var(--light_col);
+    text-shadow: 0px 0px 20px var(--light_col), -1px 0 var(--letter_border),
+      0 1px var(--letter_border), 1px 0 var(--letter_border),
+      0 -1px var(--letter_border);
+  }
+  35% {
+    color: var(--light_col);
+    text-shadow: 0px 0px 20px var(--light_col), -1px 0 var(--letter_border),
+      0 1px var(--letter_border), 1px 0 var(--letter_border),
+      0 -1px var(--letter_border);
+  }
+  36% {
+    color: var(--flick_color);
+    text-shadow: 0px 0px 0px var(--light_col), -1px 0 var(--letter_border),
+      0 1px var(--letter_border), 1px 0 var(--letter_border),
+      0 -1px var(--letter_border);
+  }
+  41% {
+    color: var(--flick_color);
+    text-shadow: 0px 0px 0px var(--light_col), -1px 0 var(--letter_border),
+      0 1px var(--letter_border), 1px 0 var(--letter_border),
+      0 -1px var(--letter_border);
+  }
+  42% {
+    color: var(--light_col);
+    text-shadow: 0px 0px 20px var(--light_col), -1px 0 var(--letter_border),
+      0 1px var(--letter_border), 1px 0 var(--letter_border),
+      0 -1px var(--letter_border);
+  }
+  100% {
+    color: var(--light_col);
+    text-shadow: 0px 0px 20px var(--light_col), -1px 0 var(--letter_border),
+      0 1px var(--letter_border), 1px 0 var(--letter_border),
+      0 -1px var(--letter_border);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0px 0px 10px var(--light_col),
+      inset 0px 0px 5px var(--light_col);
+  }
+  50% {
+    box-shadow: 0px 0px 30px var(--light_col),
+      inset 0px 0px 20px var(--light_col);
+  }
+  100% {
+    box-shadow: 0px 0px 10px var(--light_col),
+      inset 0px 0px 5px var(--light_col);
+  }
+}
+
+#main form {
+  width: 70%;
+  margin: auto;
+  padding-top: 12rem;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 45%;
+}
+
+form > input {
+  -webkit-box-flex: 1;
+  flex: 1 1 10ch;
+  margin: 0.5rem;
+  font-family: "Darker Grotesque", sans-serif;
+  font-size: 1.1rem;
+}
+
+form > input[type="email"] {
+  -webkit-box-flex: 3;
+  flex: 3 1 30ch;
+}
+
+input {
+  border: none;
+  background: #ffffe4;
+  border-radius: 0.25rem;
+  padding: 0.75rem 1rem;
+}
+
+input[type="submit"] {
+  background: transparent;
+  border: 2px dotted #4bc7cf;
+  color: #ffffe4;
+  box-shadow: 0 0.75rem 0.5rem -0.5rem hsl(0, 10%, 10%);
+  font-family: "Darker Grotesque", sans-serif;
+  font-size: 1.1rem;
+}
+
+
+@media (max-width: 1028px) {
+
+#main1{
+  height:105px;
+}
+}

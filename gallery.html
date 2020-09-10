@@ -22,12 +22,15 @@
     <!-- Links for Galleryy page-->
 
     <!-- Main links -->
+    <link rel="stylesheet" href ="css/button.css" />
     <link href="css/styles.css" rel="stylesheet">
     <link rel="stylesheet" href="css/animated_navbar.css" />
-    
+    <link href="css/getsethack.css" rel="stylesheet">
+    <link href="css/countdown.css" rel="stylesheet">
+
     <title>inGenius | #GetSetHack</title>
-		<link rel = "icon" href ="/img/favicon.png" 
-        type = "image/x-icon"> 
+		<link rel = "icon" href ="/img/favicon.png"
+        type = "image/x-icon">
   </head>
 
   <body>
@@ -77,7 +80,7 @@
         <div class="row no-gutters slider-text align-items-end">
           <div class="col-md-9 ftco-animate pb-5">
           	<p class="breadcrumbs mb-2"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Gallery <i class="ion-ios-arrow-forward"></i></span></p>
-            <h1 class="mb-0 bread" style="background-image: url('Gallery/images/galleryHeading.png'); background-position:center;">Gallery</h1>
+            <h1 class="mb-0 bread" style="background-image: url('Gallery/images/galleryHeading.jpg'); background-position:center;">Gallery</h1>
           </div>
         </div>
       </div>
@@ -237,6 +240,38 @@
 		</section>
 </div>
 
+<div id="main">
+  <div id="clock"></div>
+  <div id="display">
+    <span>Days</span> <span>Hours</span> <span>Minutes</span>
+    <span>Seconds</span>
+  </div>
+
+<div id="sign" style="padding-top: 2rem;">
+  <div id="sign_text" >
+    <span class="sign_letter sl1">See</span><span></span> <span></span><span class="sign_letter sl2">y</span><span>ou</span>
+    <span class="sign_letter sl3"></span><span>.</span> <span>Soo</span><span class="sign_letter sl4">n( )</span><span></span>
+  </div>
+</div>
+
+<div class="social-menu" style="margin-top: 50px;">
+  <span>
+<ul>
+  <li><a href="https://www.facebook.com/inGeniusHack/"><i class="fa fa-facebook"></i></a></li>
+  <li><a href="https://twitter.com/ingeniushack?lang=en"><i class="fa fa-twitter"></i></a></li>
+  <li><a href="https://www.instagram.com/ingeniushackathon/?hl=en"><i class="fa fa-instagram"></i></a></li>
+  <li><a href="https://www.youtube.com/channel/UCJSynLcZyHy6VJLflYesWoQ"><i class="fa fa-youtube"></i></a></li>
+  <li><a href="https://www.linkedin.com/company/ingenius-hack/"><i class="fa fa-linkedin"></i></a></li>
+</ul>
+</span>
+</div>
+
+<div class="getset">
+  <p class="sethack">#getsethack🔥</p>
+</div>
+
+</div>
+
 
   <script src="Gallery/js/jquery.min.js"></script>
   <script src="Gallery/js/jquery-migrate-3.0.1.min.js"></script>
@@ -256,6 +291,65 @@
   <script src="buttonup.js"></script>
   <script src="slider.js"></script>
 
+  <script>
+    function updateTimer(deadline) {
+      var time = deadline - new Date();
+      return {
+        days: Math.floor(time / (1000 * 60 * 60 * 24)),
+        hours: Math.floor((time / (1000 * 60 * 60)) % 24),
+        minutes: Math.floor((time / 1000 / 60) % 60),
+        seconds: Math.floor((time / 1000) % 60),
+        total: time
+      };
+    }
+
+    function animateClock(span) {
+      span.className = "animate__flipOutY";
+      setTimeout(function () {
+        span.className = "";
+      }, 1000);
+    }
+
+    function startTimer(id, deadline) {
+      var timerInterval = setInterval(function () {
+        var clock = document.getElementById(id);
+        var timer = updateTimer(deadline);
+
+        clock.innerHTML =
+          "<span>" +
+          timer.days +
+          "</span>" +
+          "<span>" +
+          timer.hours +
+          "</span>" +
+          "<span>" +
+          timer.minutes +
+          "</span>" +
+          "<span>" +
+          timer.seconds +
+          "</span>";
+
+        //animation
+        var spans = clock.getElementsByTagName("span");
+        animateClock(spans[3]);
+        if (timer.seconds == 59) animateClock(spans[2]);
+        if (timer.minutes == 59 && timer.seconds == 59) animateClock(spans[1]);
+        if (timer.hours == 23 && timer.minutes == 59 && timer.seconds == 59)
+          animateClock(spans[0]);
+
+        //check for end of time
+
+        if (timer.total < 1) {
+          clearInterval(timerInterval);
+          clock.innerHTML =
+            "<span>0</span><span>0</span><span>0</span><span>0</span>";
+        }
+      }, 1000);
+    }
+    window.onload = function () {
+      var deadline = new Date("October 29, 2020 12:00:00");
+      startTimer("clock", deadline);
+    };
   </script>
 
 

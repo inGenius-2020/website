@@ -68,10 +68,10 @@ html, body{
     height: 150px;
     margin: -75px 0 0 -75px;
 
-    border: 3px solid #3498db;
+    border: 3px solid #0098ff;
     z-index: 1500;
     border: 3px solid transparent;
-    border-top-color: #3498db;
+    border-top-color: #0098ff;
     border-radius: 50%;
     -webkit-animation: spin 2s linear infinite;
     animation: spin 2s linear infinite;
@@ -85,9 +85,9 @@ html, body{
     left: 5px;
     right: 5px;
     bottom: 5px;
-    border: 3px solid #e74c3c;
+    border: 3px solid #3c75e7;
     border: 3px solid transparent;
-    border-top-color: #e74c3c;
+    border-top-color: #3c75e7;
     border-radius: 50%;
     -webkit-animation: spin 3s linear infinite;
     animation: spin 3s linear infinite;
