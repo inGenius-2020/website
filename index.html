@@ -6,11 +6,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-
+    <link rel="icon" href ="/img/favicon.png" type = "image/x-icon">
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ==" crossorigin="anonymous" />
 	<link rel="stylesheet" href ="css/button.css" />
-	<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 	<link rel="stylesheet" href="/faq-template-master/assets/css/style.css">
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
@@ -21,15 +20,13 @@
 	<link href="css/ingenious.css" rel="stylesheet">
 	<link href="css/terminal.css" rel="stylesheet">
 
-
-
   <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
   <link rel="stylesheet" href="css/animated_navbar.css" />
+
     <title>inGenius | #GetSetHack</title>
-	<link rel = "icon" href ="/img/favicon.png"
-        type = "image/x-icon">
+
 </head>
 
 
@@ -75,31 +72,34 @@
 </div>
 </div>
 </nav>
- <!--navbar-->
+
       <div id="content">
         <div id='stars'></div>
         <div id='stars2'></div>
         <div id='stars3'></div>
         <div id="title"></div>
 	  </div>
+
 	  <div class = "row">
-		  <div class="col-6" id = "toremove">
+		  <div class="col-6" id="toremove">
 			<img class="rounded" src="img/ingen.png" alt="ingenius">
 		  </div>
-		  <div class = "col-6">
-			<div class=fakeMenu>
-				<div class="fakeButtons fakeClose"></div>
-				<div class="fakeButtons fakeMinimize"></div>
-				<div class="fakeButtons fakeZoom"></div>
+      <div class="animate__animated animate__backInRight active" style="animation-delay:6s;">
+		  <div id="terminal" class ="col-6" style="padding:50px">
+			<div class="fakeMenu btn-group">
+				<button class="fakeButtons fakeClose" onclick="terminal_disappear()"></button>
+				<button class="fakeButtons fakeMinimize" onclick="terminal_disappear()"></button>
+				<button class="fakeButtons fakeZoom"></button>
 			</div>
 			<div class="fakeScreen">
-				<p class="line1">$ ingenius hackathon<span class="cursor1">_</span></p>
-				<p class="line2">upcoming events:<span class="cursor2">_</span></p>
-				<p class="line3"><span id = "tochange"></span><span class="cursor3">_</span></p>
-				<p class="line4">><span class="cursor4">_</span></p>
+				<p class="line1_2">inGenius Hackathon</p>
+				<p class="line1_2">Coming Up:</p>
+				<p class="line3_4"><span id="tochange"></p>
+				<p class="line3_4">><span class="cursor4">_</span></p>
 			</div>
 		</div>
 		</div>
+  </div>
 
     <div id="main1">
       <div id="clock"></div>
@@ -175,10 +175,10 @@ Circumstances may have forced us online, but that also came as a blessing in dis
 			</div>
 		</section>
 
-		<section class="bg animate__animated animate__backInRight bg-transparent"  id="faq" ">
+		<section class="bg animate__animated animate__backInRight bg-transparent"  id="faq" >
 			<div class="container">
-				<h2 class="text-white" >CODE OF CONDUCT</h2>
-				<p class="ossfet-sm-1 text-white">inGenius 2020 is an annual 24-hour hackathon organised by PES University, Electronic City Campus.  We are a platform for students pursuing their professional degree, to apply knowledge gained in the classroom and prototype meaningful products.
+				<h2 class="text-white">CODE OF CONDUCT</h2>
+				<p class="offset-sm-1 text-white">inGenius 2020 is an annual 24-hour hackathon organised by PES University, Electronic City Campus.  We are a platform for students pursuing their professional degree, to apply knowledge gained in the classroom and prototype meaningful products.
 
 As you all know by now, taking into consideration the current situation, inGenius has gone completely online for this year's iteration. However, we still aim to provide an equally pleasurable and a comparable experience to that of all our previous iterations of the event and have taken care to ensure the same.
 
@@ -372,6 +372,11 @@ We're here to help you however you need! Feel free to drop us an email. You coul
 
 
     <script>
+    function terminal_disappear()
+    {
+       console.log("close");
+       document.getElementById('terminal').style.display="none";
+    }
       function updateTimer(deadline) {
         var time = deadline - new Date();
         return {

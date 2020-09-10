@@ -18,8 +18,6 @@ html, body{
     /*overflow-y: scroll;*/
 }
 
-
-
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
 #links {
     max-width: 500px;
@@ -27,6 +25,7 @@ html, body{
     display: block;
     margin: 20px auto;
 }
+
 .link {
     display: block;
     background-color: #3fc5f0;
@@ -85,9 +84,9 @@ html, body{
     left: 5px;
     right: 5px;
     bottom: 5px;
-    border: 3px solid #3c75e7;
+    border: 3px solid #32dbfc;
     border: 3px solid transparent;
-    border-top-color: #3c75e7;
+    border-top-color: #32dbfc;
     border-radius: 50%;
     -webkit-animation: spin 3s linear infinite;
     animation: spin 3s linear infinite;
@@ -99,9 +98,9 @@ html, body{
     left: 15px;
     right: 15px;
     bottom: 15px;
-    border: 3px solid #f9c922;
+    border: 3px solid #e8e8e8;
     border: 3px solid transparent;
-    border-top-color: #f9c922;
+    border-top-color: #e8e8e8;
     border-radius: 50%;
     -webkit-animation: spin 1.5s linear infinite;
     animation: spin 1.5s linear infinite;
