@@ -8,6 +8,8 @@ html{
 html, body{
     position: relative;
     width:100%;
+    align-items: center;
+    justify-content: center;
     background-color: #0F1623;
     font-family: "Quicksand", sans-serif;
     font-size: 62.5%;
