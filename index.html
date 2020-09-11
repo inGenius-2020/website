@@ -109,20 +109,24 @@
     <div class="col-12 col-md-4">
     </div>
 <!--terminal-->
-    <div class="offset-3 col-10 col-md-4">
-    <div class="animate__animated animate__backInRight active" style="animation-delay:6s;">
-    <div id="terminal" class="col-6 col-md-4" style="padding-top:60px;">
-    <div class="fakeMenu btn-group">
-      <button class="fakeButtons fakeClose" onclick="terminal_disappear()"></button>
-      <button class="fakeButtons fakeMinimize" onclick="terminal_disappear()"></button>
-      <button class="fakeButtons fakeZoom"></button>
-    </div>
-    <div class="fakeScreen">
-      <p class="line1_2">Coming Up:</p>
-      <p class="line3_4"><span id="tochange"></p>
-      <p class="line3_4">><span class="cursor4">_</span></p>
-    </div>
-  </div>
+    <div class="row">
+		<div class="col-6" id = "toremove"></div>
+		<div class = "col-6">
+			<div class="animate__animated animate__backInRight active" style="animation-delay:6s;">
+			<div id="terminal" class="col-6 col-md-4" style="padding-top:60px;">
+			<div class="fakeMenu btn-group">
+				<button class="fakeButtons fakeClose" onclick="terminal_disappear()"></button>
+				<button class="fakeButtons fakeMinimize" onclick="terminal_disappear()"></button>
+				<button class="fakeButtons fakeZoom"></button>
+    		</div>
+    		<div class="fakeScreen">
+				<p class="line1_2">pesuecc~:$ingenius_hackathon</p>
+				<p class="line1_2">Upcoming Events:</p>
+				<p class="line3_4"><span id="tochange"></p>
+				<p class="line3_4">><span class="cursor4">_</span></p>
+    		</div>
+		  </div>
+		</div>
   </div>
   </div>
 </div>
@@ -450,24 +454,79 @@ We're here to help you however you need! Feel free to drop us an email. You coul
 
         var today = new Date();
   		  var aaj = today.getDate();
+			var hr = today.getHours()
+			console.log(hr)
   		  console.log(aaj)
-  		  if (aaj>=9 && aaj<=11){
-  			document.getElementById("tochange").innerHTML = "Django 101,  Sept 11"
+  		  if (aaj>=9 && aaj<12){
+				if(aaj === 11){
+					if (hr < 19){
+  						document.getElementById("tochange").innerHTML = "Django 101,  Sept 11";
+					}
+					else{
+						document.getElementById("tochange").innerHTML = "Frontend-Backend Integration, Sept 15"
+					}
+				}
+  		  	}
+  		  if (aaj>=12 && aaj<16){
+			if(aaj === 15){
+					if (hr < 19){
+  						document.getElementById("tochange").innerHTML = "Frontend-Backend Integration, Sept 15";
+					}
+					else{
+						document.getElementById("tochange").innerHTML = "Flutter Sept 18";
+					}
+			}else{
+				document.getElementById("tochange").innerHTML = "Frontend-Backend Integration, Sept 15";
+			}
   		  }
-  		  if (aaj>=12 && aaj<=15){
-  			document.getElementById("tochange").innerHTML = "Frontend-Backend Integration, Sept 15"
+  		  if (aaj>=16 && aaj<19){
+			if(aaj === 18){
+					if (hr < 19){
+  						document.getElementById("tochange").innerHTML = "Flutter Sept 18";
+					}
+					else{
+						document.getElementById("tochange").innerHTML = "ML Sept 22"
+					}
+			}else{
+				document.getElementById("tochange").innerHTML = "Flutter Sept 18";
+			}
   		  }
-  		  if (aaj>=16 && aaj<=18){
-  			document.getElementById("tochange").innerHTML = "Flutter Sept 18"
+  		  if (aaj>=19 && aaj<23){
+			if(aaj === 22){
+					if (hr < 19){
+  						document.getElementById("tochange").innerHTML = "ML Sept 22"
+					}
+					else{
+						document.getElementById("tochange").innerHTML = "Neural Networks Sept 25"
+					}
+			}else{
+				document.getElementById("tochange").innerHTML = "ML Sept 22"
+			}
   		  }
-  		  if (aaj>=19 && aaj<=22){
-  			document.getElementById("tochange").innerHTML = "ML Sept 22"
+  		  if (aaj>=23 && aaj<26){
+			if(aaj === 25){
+					if (hr < 19){
+  						document.getElementById("tochange").innerHTML = "Neural Networks Sept 25"
+					}
+					else{
+						document.getElementById("tochange").innerHTML = "ML model Sept 29"
+					}
+			}else{
+				document.getElementById("tochange").innerHTML = "Neural Networks Sept 25"
+			}
   		  }
-  		  if (aaj>=23 && aaj<=25){
-  			document.getElementById("tochange").innerHTML = "Neural Networks Sept 25"
-  		  }
-  		  if (aaj>=26 && aaj<=29){
-  			document.getElementById("tochange").innerHTML = "ML model Sept 29"
+  		  if (aaj>=26 && aaj<30){
+			if(aaj === 29){
+					if (hr < 19){
+  						document.getElementById("tochange").innerHTML = "ML model Sept 29"
+					}
+					else{
+						document.getElementById("tochange").innerHTML = "No upcoming events!"
+					}
+			}
+			else{
+				document.getElementById("tochange").innerHTML = "ML model Sept 29"
+			}
   		  }
       };
 
