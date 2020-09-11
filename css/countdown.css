@@ -1,32 +1,27 @@
-@import url("https://fonts.googleapis.com/css2?family=Bungee&family=Codystar:wght@300;400&family=Darker+Grotesque:wght@500&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
-
 :root {
   --light_col: #00cccc;
   --letter_border: #4bc7cf;
   --flick_color: #a0e6ff;
 }
 
-
-
 #main {
   width: 100vw;
   background: #2b2b2b;
-  font-family: "Bungee", cursive;
+  font-family: sans-serif, cursive;
 }
 
 #main1 {
   width: 100vw;
   /*background: #2b2b2b;*/
-  font-family: "Bungee", cursive;
-  height: 220px;
+  font-family: sans-serif;
+  height: auto;
 }
 
 #clock span {
   background-color: #2b2b2b;
   float: left;
   text-align: center;
-  font-size: 6vw;
+  font-size: 3vw;
   margin: 0 2.5%;
   color: #fdf5e6;
   padding: 20px;
@@ -48,14 +43,14 @@
   margin-top: 30px;
   color: #ddd;
   text-transform: uppercase;
-  font-size: 2vw;
-  letter-spacing: 2px;
+  font-size: 1vw;
+  letter-spacing: 1px;
   text-shadow: 1px 1px 1px rgba(10, 10, 10, 0.7);
 }
 
 #display span:nth-child(1) {
   position: absolute;
-  left: 10%;
+  left: 12%;
   margin-top: -0.1%;
 }
 
@@ -67,13 +62,13 @@
 
 #display span:nth-child(3) {
   position: absolute;
-  left: 59%;
+  left: 58%;
   margin-top: -0.1%;
 }
 
 #display span:nth-child(4) {
   position: absolute;
-  left: 84%;
+  left: 81%;
   margin-top: -0.1%;
 }
 
@@ -418,6 +413,6 @@ input[type="submit"] {
 @media (max-width: 1028px) {
 
 #main1{
-  height:105px;
+  height:auto;
 }
 }

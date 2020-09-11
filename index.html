@@ -83,36 +83,35 @@
 	  </div>
 
 <!-- landingpage -->
-  <br />
-  <br />
     <section="landing" style="background-color:transparent;">
     <div class="row justify-content-center">
     <div class="col-12 col-sm-6">
-    <h1 class="reduce_size text-center" style="background-color:transparent; font-size:300%"><strong style="color:white;">inGenius</strong></h1>
+    <h1 class="text-center" style="background-color:transparent; padding-top:50px; font-size:300%"><strong style="color:white;">in<span style="color:#24ccff">Genius</span></strong></h1>
     <h2 class="text-center" style="color:floralwhite; font-size:80%; opacity:.8">October 30-31, 2020</h2>
     <h3 class="text-center d-none d-sm-block" style="color:floralwhite; opacity:.5">An annual 24-hour hackathon organised by PES University</h3>
      </div>
     </div>
-    </section>
 <!--timer-->
 <br />
 <h2 class="text-center" style="color:white; font-size:90%">Starts in </h2> <br />
-<div id="main1">
+<div class="row justify-content-center">
+<div id="main1" class="col-md-6">
   <div id="clock"></div>
   <div id="display">
     <span class="text-center">Days</span> <span>Hours</span> <span>Minutes</span>
     <span>Seconds</span>
   </div>
 </div>
+</div>
+
 <div class="container-fluid">
 <div class="row">
-
-    <div class="col-12 col-md-6">
+    <div class="col-12 col-md-4">
     </div>
 <!--terminal-->
-    <div class="col-12 col-md-4">
+    <div class="offset-3 col-10 col-md-4">
     <div class="animate__animated animate__backInRight active" style="animation-delay:6s;">
-    <div id="terminal" class ="col-6" style="padding:50px">
+    <div id="terminal" class="col-6 col-md-4" style="padding-top:60px;">
     <div class="fakeMenu btn-group">
       <button class="fakeButtons fakeClose" onclick="terminal_disappear()"></button>
       <button class="fakeButtons fakeMinimize" onclick="terminal_disappear()"></button>
@@ -128,25 +127,32 @@
   </div>
 </div>
 </div>
-
+</section>
+<!--about-->
+<br />
+<br />
 		<section class="animate__animated animate__backInRight active" id="about">
 			<div class="container">
-				<div class="row">
-					<div class="col-lg-9 col-12">
-						<h2 class="text-white"> About Us </h2>
-						<p class="mt-3" style="color:floralwhite;opacity:.7">
-						inGenius is an annual 24-hour hackathon organised by PES University, Electronic City Campus. It is one of the most prestigious technical flagship events of South India, with people all around coming together to participate. We've successfully completed 8 iterations and we're back again, ready for action!
-Circumstances may have forced us online, but that also came as a blessing in disguise. Because this time, we've upped the stakes like never before as we're going fully global this year! That's right, inGenius is open to registrations to each and any one of you that wants to take part, wherever you are. No restrictions, no criteria, and NO FEE. Read the brochure to know more! [Link for brochure].
+				<div class="row justify-content-center">
+					<div class="col-12">
+						<h2 class="text-white text-center" style="font-size:120%"> About Us </h2>
+            <div class="mt-3 reduce" style="color:floralwhite;opacity:.7; font-size:80%">
+						<p>
+						inGenius is an annual 24-hour hackathon organised by PES University, Electronic City Campus.</p><p> It is one of the most prestigious technical flagship events in India, with people all around coming together to participate. We've successfully completed 8 iterations and we're back again, ready for action!</p>
+Circumstances may have forced us online, but that also came as a blessing in disguise. Because this time, we've upped the stakes like never before, we're going fully global this year!<p> That's right, inGenius is open to registrations to each and anyone of you that wants to take part, wherever you are. No restrictions, no criteria, and NO FEE.</p> Read the brochure to know more!<p class="mt-1"><a href="">brochure_link</p></a>.
 						</p>
+          </div>
+
 						<p class="mt-3 blues_text">
 						<strong>#GetSetHack</strong>
-						</p>
+            <!--<img src="img\getSetHack.png" class="img-fluid" width="200" height="40" />-->
+          </p>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<section id="events_">
+		<section id="events">
 			<img class="row" style="filter:brightness(120%)" src="img/pre.png" alt="event timeline">
 			<div class="row">
 			<div class="col-sm-12 text-align-centerjustify-content-center ">
@@ -446,10 +452,10 @@ We're here to help you however you need! Feel free to drop us an email. You coul
   		  var aaj = today.getDate();
   		  console.log(aaj)
   		  if (aaj>=9 && aaj<=11){
-  			document.getElementById("tochange").innerHTML = "Django 101  Sept 11"
+  			document.getElementById("tochange").innerHTML = "Django 101,  Sept 11"
   		  }
   		  if (aaj>=12 && aaj<=15){
-  			document.getElementById("tochange").innerHTML = "Frontend-Backend Integration Sept 15"
+  			document.getElementById("tochange").innerHTML = "Frontend-Backend Integration, Sept 15"
   		  }
   		  if (aaj>=16 && aaj<=18){
   			document.getElementById("tochange").innerHTML = "Flutter Sept 18"

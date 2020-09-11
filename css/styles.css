@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
 @import url('https://fonts.googleapis.com/css2?family=Faster+One&display=swap');
+@import 'https://fonts.googleapis.com/css?family=Raleway';
 
 html{
   scroll-behavior: smooth;
@@ -11,10 +12,9 @@ html, body{
     align-items: center;
     justify-content: center;
     background-color: #0F1623;
-    font-family: "Quicksand", sans-serif;
     font-size: 62.5%;
-    font-size: 10px;
     height:auto;
+    font-family: 'Raleway' !important;
     /*overflow-y: scroll;*/
 }
 
@@ -106,9 +106,6 @@ html, body{
     animation: spin 1.5s linear infinite;
 }
 
-.reduce_size{
-  font-size: 100%
-}
 
 .blues_text {
   background-image: linear-gradient(to left, violet, deepskyblue);
@@ -117,10 +114,28 @@ html, body{
 }
 
 @media only screen and (max-width: 760px) {
-  .nav-item { border-bottom: 1px solid white; padding:25px}
+  .nav-item { border-bottom: 1px solid white; padding:20px}
     html {
-    overflow-x: hidden; }
+    overflow-x: hidden;}
+    h1{
+      padding:0px;
     }
+    #display span{
+      font-size:25%;
+    }
+    .line1_2{
+      font-size: 70%;
+    }
+    .line3_4{
+      font-size: 70%;
+    }
+    .reduce{
+      font-size: 50%;
+    }
+    .remove_padding{
+      padding-top:0px;
+    }
+  }
 
 /* copy and paste the animation inside all 3 elements */
 /* #loader, #loader:before, #loader:after */
