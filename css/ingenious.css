@@ -1,6 +1,5 @@
 @font-face{font-family:"San Francisco";font-weight:400;src:url(../fonts/sanfranciscodisplay-regular-webfont.woff)}
 body{font-family:"San Francisco",Helvetica,Arial,sans-serif;font-size:24px;}
-h1,h2,h3,h4,h5,h6{font-family:"San Francisco",Helvetica,Arial,sans-serif;font-weight:700}
 section{padding:45px 0}
 .btn-primary{background-color:#6bc8b0;border-color:#6bc8b0;color:#fff!important;display:-webkit-box;display:-ms-flexbox;display:flex;overflow:hidden;position:relative;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
 .btn-primary:hover{background-color:#3fba9d;border-color:#3fba9d}
@@ -52,7 +51,7 @@ header #heroImage .art-item.wifi.w3{top:21.5%;left:89.25%}
 header #heroImage .art-item.wifi.w3 path{-webkit-animation-delay:2s!important;animation-delay:2s!important}
 header #heroImage .art-item.wifi path:nth-child(1){-webkit-animation:blink-1 5s linear infinite alternate;animation:blink-1 5s linear infinite alternate}
 header #heroImage .art-item.wifi path:nth-child(2){-webkit-animation:blink-2 5s linear infinite alternate;animation:blink-2 5s linear infinite alternate}.timer-text{color:#8166cd;font-size:18px;margin-top:8px;text-align:center}@-webkit-keyframes blink-1{0%{visibility:hidden}25%{visibility:visible}50%{visibility:hidden}75%{visibility:hidden}100%{visibility:hidden}}@keyframes blink-1{0%{visibility:hidden}25%{visibility:visible}50%{visibility:hidden}75%{visibility:hidden}100%{visibility:hidden}}@-webkit-keyframes blink-2{0%{visibility:visible}25%{visibility:visible}50%{visibility:hidden}75%{visibility:hidden}100%{visibility:visible}}@keyframes blink-2{0%{visibility:visible}25%{visibility:visible}50%{visibility:hidden}75%{visibility:hidden}100%{visibility:visible}}.fill{display:none}.apply-btn.disabled>.fill{background-color:#3fba9d!important;border:1px solid #3fba9d!important;-webkit-box-sizing:unset;box-sizing:unset;display:block;height:100%;left:-1px;position:absolute;top:-1px;z-index:-1;-webkit-animation:fillprogress 40s;animation:fillprogress 40s;-webkit-transition:all .2s ease-out;-o-transition:all .2s ease-out;transition:all .2s ease-out}@-webkit-keyframes fillprogress{from{width:0}to{width:100%}}@keyframes fillprogress{from{width:0}to{width:100%}}
-#about{background-color:#6bc8b0}
+#about{background-color:transparent}
 #about .art .text{margin-left:8rem}
 #about .art .line{width:320px}
 #about .art .line-1 .text{margin-top:-24px;margin-bottom:40px}

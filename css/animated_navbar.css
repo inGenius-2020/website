@@ -120,7 +120,7 @@ div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after
         overflow: hidden;
     }
     .nav div.show_list {
-      height: auto;
+      height: 100vh;
       display: none;
     }
     .nav div.main_list ul {
@@ -345,12 +345,4 @@ div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after
 .img-thumbnail{
   background-color: transparent;
   border:0px;
-}
-
-
-@media only screen and (max-width: 760px) {
-  .nav-item { border-bottom: 1px solid white; padding:15px;}
-    html {
-    overflow-x: hidden; }
-  }
 }

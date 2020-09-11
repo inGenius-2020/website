@@ -13,10 +13,18 @@
 
   });
   $(document).scroll(function() {
-          if ($(document).scrollTop() > 50) {
-              $('.nav').addClass('affix');
+      if($(document).scrollTop()>15){
+        $('.anim_addi').removeClass('d-none');
+        console.log("here");
+      }
+      else{
+          $('.anim_addi').addClass('d-none');
+      }
+
+      if ($(document).scrollTop() > 50) {
+          $('.nav').addClass('affix');
               //console.log("OK");
-          } else {
-              $('.nav').removeClass('affix');
+      } else {
+          $('.nav').removeClass('affix');
           }
   });

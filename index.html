@@ -38,6 +38,7 @@
   </div>
 
   <!--navbar-->
+  <div class="anim_addi d-none d-md-block">
   <nav class="nav navbar navbar-expand-lg">
   <a class="navbar-brand logo m-4" href="#"><img src="img/inGen20Logo_C-01.png" class="img-fluid " width=100px height=35px /></a>
   <span class="navTrigger">
@@ -72,6 +73,7 @@
 </div>
 </div>
 </nav>
+</div>
 
       <div id="content">
         <div id='stars'></div>
@@ -80,46 +82,64 @@
         <div id="title"></div>
 	  </div>
 
-	  <div class = "row">
-		  <div class="col-6" id="toremove">
-			<img class="rounded" src="img/ingen.png" alt="ingenius">
-		  </div>
-      <div class="animate__animated animate__backInRight active" style="animation-delay:6s;">
-		  <div id="terminal" class ="col-6" style="padding:50px">
-			<div class="fakeMenu btn-group">
-				<button class="fakeButtons fakeClose" onclick="terminal_disappear()"></button>
-				<button class="fakeButtons fakeMinimize" onclick="terminal_disappear()"></button>
-				<button class="fakeButtons fakeZoom"></button>
-			</div>
-			<div class="fakeScreen">
-				<p class="line1_2">inGenius Hackathon</p>
-				<p class="line1_2">Coming Up:</p>
-				<p class="line3_4"><span id="tochange"></p>
-				<p class="line3_4">><span class="cursor4">_</span></p>
-			</div>
-		</div>
-		</div>
-  </div>
-
-    <div id="main1">
-      <div id="clock"></div>
-      <div id="display">
-        <span>Days</span> <span>Hours</span> <span>Minutes</span>
-        <span>Seconds</span>
-      </div>
+<!-- landingpage -->
+  <br />
+  <br />
+    <section="landing" style="background-color:transparent;">
+    <div class="row justify-content-center">
+    <div class="col-12 col-sm-6">
+    <h1 class="reduce_size text-center" style="background-color:transparent; font-size:300%"><strong style="color:white;">inGenius</strong></h1>
+    <h2 class="text-center" style="color:floralwhite; font-size:80%; opacity:.8">October 30-31, 2020</h2>
+    <h3 class="text-center d-none d-sm-block" style="color:floralwhite; opacity:.5">An annual 24-hour hackathon organised by PES University</h3>
+     </div>
     </div>
+    </section>
+<!--timer-->
+<br />
+<h2 class="text-center" style="color:white; font-size:90%">Starts in </h2> <br />
+<div id="main1">
+  <div id="clock"></div>
+  <div id="display">
+    <span class="text-center">Days</span> <span>Hours</span> <span>Minutes</span>
+    <span>Seconds</span>
+  </div>
+</div>
+<div class="container-fluid">
+<div class="row">
+
+    <div class="col-12 col-md-6">
+    </div>
+<!--terminal-->
+    <div class="col-12 col-md-4">
+    <div class="animate__animated animate__backInRight active" style="animation-delay:6s;">
+    <div id="terminal" class ="col-6" style="padding:50px">
+    <div class="fakeMenu btn-group">
+      <button class="fakeButtons fakeClose" onclick="terminal_disappear()"></button>
+      <button class="fakeButtons fakeMinimize" onclick="terminal_disappear()"></button>
+      <button class="fakeButtons fakeZoom"></button>
+    </div>
+    <div class="fakeScreen">
+      <p class="line1_2">Coming Up:</p>
+      <p class="line3_4"><span id="tochange"></p>
+      <p class="line3_4">><span class="cursor4">_</span></p>
+    </div>
+  </div>
+  </div>
+  </div>
+</div>
+</div>
+
 		<section class="animate__animated animate__backInRight active" id="about">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-9 col-12 text-white">
-						<h2> About Us </h2>
-						<p class="mt-3">
+					<div class="col-lg-9 col-12">
+						<h2 class="text-white"> About Us </h2>
+						<p class="mt-3" style="color:floralwhite;opacity:.7">
 						inGenius is an annual 24-hour hackathon organised by PES University, Electronic City Campus. It is one of the most prestigious technical flagship events of South India, with people all around coming together to participate. We've successfully completed 8 iterations and we're back again, ready for action!
 Circumstances may have forced us online, but that also came as a blessing in disguise. Because this time, we've upped the stakes like never before as we're going fully global this year! That's right, inGenius is open to registrations to each and any one of you that wants to take part, wherever you are. No restrictions, no criteria, and NO FEE. Read the brochure to know more! [Link for brochure].
-
 						</p>
-						<p class="mt-3">
-						#GetSetHack
+						<p class="mt-3 blues_text">
+						<strong>#GetSetHack</strong>
 						</p>
 					</div>
 				</div>
@@ -337,19 +357,6 @@ We're here to help you however you need! Feel free to drop us an email. You coul
   </div>
 
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
 <button id="btn-go-to-up" class="btn-go-to-up" title="Go To Top">
 	<i class="fa fa-hand-o-up icon-go-to-up" aria-hidden="true"></i>
 </button>
@@ -374,7 +381,7 @@ We're here to help you however you need! Feel free to drop us an email. You coul
     <script>
     function terminal_disappear()
     {
-       console.log("close");
+       //console.log("close");
        document.getElementById('terminal').style.display="none";
     }
       function updateTimer(deadline) {
@@ -423,7 +430,6 @@ We're here to help you however you need! Feel free to drop us an email. You coul
             animateClock(spans[0]);
 
           //check for end of time
-
           if (timer.total < 1) {
             clearInterval(timerInterval);
             clock.innerHTML =
@@ -433,7 +439,7 @@ We're here to help you however you need! Feel free to drop us an email. You coul
       }
 
       window.onload = function () {
-        var deadline = new Date("October 29, 2020 12:00:00");
+        var deadline = new Date("October 30, 2020 00:00:00");
         startTimer("clock", deadline);
 
         var today = new Date();
