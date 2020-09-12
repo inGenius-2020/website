@@ -119,7 +119,7 @@
 <!--terminal-->
     <div class="row">
 		<div class="col-6" id = "toremove"></div>
-		<div class = "col-6">
+		<div style="align-items: center;">
 			<div class="animate__animated animate__backInRight active" style="animation-delay:6s;">
 				<div id="terminal" class="col-6 col-md-4" style="padding-top:60px;">
 					<div class="fakeMenu btn-group">
@@ -307,8 +307,8 @@ Keeping that in mind, we have come up with a Code of Conduct and we advise every
 
   <div id="sign" style="padding-top: 2rem;">
     <div id="sign_text" >
-      <span class="sign_letter sl1">See</span><span></span> <span></span><span class="sign_letter sl2">y</span><span>ou</span>
-      <span class="sign_letter sl3"></span><span>.</span> <span>Soo</span><span class="sign_letter sl4">n( )</span><span></span>
+      <span class="sign_letter">See</span><span></span> <span></span><span class="sign_letter">y</span><span>ou</span>
+      <span class="sign_letter"></span><span>.</span> <span>Soo</span><span class="sign_letter">n( )</span><span></span>
     </div>
   </div>
 
@@ -368,12 +368,12 @@ Keeping that in mind, we have come up with a Code of Conduct and we advise every
         };
       }
 
-      function animateClock(span) {
-        span.className = "animate__flipOutY";
-        setTimeout(function () {
-          span.className = "";
-        }, 1000);
-      }
+    //   function animateClock(span) {
+    //     span.className = "animate__flipOutY";
+    //     setTimeout(function () {
+    //       span.className = "";
+    //     }, 1000);
+    //   }
 
       function startTimer(id, deadline) {
         var timerInterval = setInterval(function () {
@@ -395,12 +395,12 @@ Keeping that in mind, we have come up with a Code of Conduct and we advise every
             "</span>";
 
           //animation
-          var spans = clock.getElementsByTagName("span");
-          animateClock(spans[3]);
-          if (timer.seconds == 59) animateClock(spans[2]);
-          if (timer.minutes == 59 && timer.seconds == 59) animateClock(spans[1]);
-          if (timer.hours == 23 && timer.minutes == 59 && timer.seconds == 59)
-            animateClock(spans[0]);
+        //   var spans = clock.getElementsByTagName("span");
+        //   animateClock(spans[3]);
+        //   if (timer.seconds == 59) animateClock(spans[2]);
+        //   if (timer.minutes == 59 && timer.seconds == 59) animateClock(spans[1]);
+        //   if (timer.hours == 23 && timer.minutes == 59 && timer.seconds == 59)
+        //     animateClock(spans[0]);
 
           //check for end of time
           if (timer.total < 1) {
