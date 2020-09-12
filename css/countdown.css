@@ -105,25 +105,14 @@ span.flip {
   text-shadow: 0px 0px 20px var(--light_col), -1px 0 var(--letter_border),
     0 1px var(--letter_border), 1px 0 var(--letter_border),
     0 -1px var(--letter_border);
-  animation: pulse 4s ease-in-out infinite;
+
 }
 
 .sign_letter {
   margin-left: -5px;
 }
 
-.sl1 {
-  animation: flicker_v1 6s linear infinite;
-}
-.sl2 {
-  animation: flicker_v3 7s linear infinite;
-}
-.sl3 {
-  animation: flicker_v2 8s linear infinite;
-}
-.sl4 {
-  animation: flicker_v4 9s linear infinite;
-}
+
 
 @keyframes flicker_v1 {
   0% {
