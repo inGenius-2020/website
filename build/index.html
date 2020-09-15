@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="icon" href ="/img/favicon.png" type = "image/x-icon">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ==" crossorigin="anonymous" />
+	<link rel="stylesheet" href ="css/button.css" />
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	<link rel="stylesheet" href="css/faqstyle.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link href="css/getsethack.css" rel="stylesheet">
+  <link href="css/countdown.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+	<link href="css/ingenious.css" rel="stylesheet">
+	<link href="css/terminal.css" rel="stylesheet">
+	<link href="css/devfolio.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/bootstrap-social.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+  <link rel="stylesheet" href="css/animated_navbar.css" />
+  <link rel = "stylesheet" href = "css/faq.css"/>
+
+    <title>inGenius | #GetSetHack</title>
+
+</head>
+
+<body onLoad = textLoad()>
+	<div id="loader-wrapper">
+      <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+  </div>
+
+  <!--navbar-->
+  <div class="anim_addi d-none d-md-block">
+  <nav class="nav navbar navbar-expand-lg">
+  <a class="navbar-brand logo m-4" href="#"><img src="img/inGen20Logo_C-01.png" class="img-fluid " width=100px height=35px /></a>
+  <span class="navTrigger">
+                  <i></i>
+                  <i></i>
+                  <i></i>
+  </span>
+<div class="main_list ml-auto" id="mainListDiv">
+<div class="container black topBotomBordersIn">
+    <ul class="navbar-nav navlinks">
+    <li class="nav-item">
+    <a href="#about">About</a>
+    </li>
+    <li class="nav-item">
+    <a href="#events">Events</a>
+    </li>
+    <li class="nav-item">
+    <a href="gallery.html">Gallery</a>
+    </li>
+    <li class="nav-item">
+    <a href="team.html">Team</a>
+    </li>
+    <li class="nav-item">
+    <a href="#faq">FAQs</a>
+    </li>
+    <li class="nav-item">
+    <a href="#sponsors">Sponsors</a>
+    </li>
+    <li class="nav-item">
+    <a href="#contact">Contact Us</a>
+  </li>
+</div>
+</div>
+</nav>
+<div id='stars'></div>
+<div id='stars2'></div>
+<div id='stars3'></div>
+</div>
+
+      <div id="content">
+        <div id='stars'></div>
+        <div id='stars2'></div>
+        <div id='stars3'></div>
+        <div id="title"></div>
+	  </div>
+
+<!-- landingpage -->
+    <section="landing" style="background-color:transparent;">
+    <div class="row justify-content-center">
+    <div class="col-12 col-sm-6">
+    <div ><h1 class="text-center" style="background-color:transparent;  font-size:300%"><strong style="color:white;">in<span style="color:#24ccff">Genius</span></strong></h1>
+		<h2 class="text-center" style="background-color:transparent; font-size:200%"><span style="color:#24ccff">#GetSetHack</span></h2>
+	</div>
+
+    <h2 class="text-center" style="color:floralwhite; font-size:80%; opacity:.8">October 30-31, 2020</h2>
+    <h3 class="text-center d-none d-sm-block" style="color:floralwhite; opacity:.5">An annual 24-hour hackathon organised by PES University</h3>
+     </div>
+    </div>
+<!--timer-->
+<br />
+<h2 class="text-center" style="color:white; font-size:90%">Starts in </h2> <br />
+<div class="row justify-content-center">
+<div id="main1" class="col-md-6">
+  <div id="clock"></div>
+  <div id="display">
+    <span class="text-center">Days</span> <span>Hours</span> <span>Minutes</span>
+    <span>Seconds</span>
+  </div>
+</div>
+</div>
+<br />
+<div class="row justify-content-center"><button id="devfolio-apply-now"><svg class="logo" xmlns="http://www.w3.org/2000/svg" fill="#fff"viewBox="0 0 115.46 123.46" style="height:24px;width:24px;margin-right:8px"><path d="M115.46 68a55.43 55.43 0 0 1-50.85 55.11S28.12 124 16 123a12.6 12.6 0 0 1-10.09-7.5 15.85 15.85 0 0 0 5.36 1.5c4 .34 10.72.51 20.13.51 13.82 0 28.84-.38 29-.38h.26a60.14 60.14 0 0 0 54.72-52.47c.05 1.05.08 2.18.08 3.34z" /><path d="M110.93 55.87A55.43 55.43 0 0 1 60.08 111s-36.48.92-48.58-.12C5 110.29.15 104.22 0 97.52l.2-83.84C.38 7 5.26.94 11.76.41c12.11-1 48.59.12 48.59.12a55.41 55.41 0 0 1 50.58 55.34z"/></svg>#opening->Soon</button></div>
+
+<div class="container-fluid">
+<div class="row">
+    <div class="col-12 col-md-4">
+    </div>
+<!--terminal-->
+    <div class="row">
+		<div class="col-6" id = "toremove"></div>
+		<div style="align-items: center;">
+			<div class="animate__animated animate__backInRight active" style="animation-delay:6s;">
+				<div id="terminal" class="col-6 col-md-4" style="padding-top:60px;">
+					<div class="fakeMenu btn-group">
+						<button class="fakeButtons fakeClose" onclick="terminal_disappear()"></button>
+						<button class="fakeButtons fakeMinimize" onclick="terminal_disappear()"></button>
+						<button class="fakeButtons fakeZoom"></button>
+					</div>
+    				<div class="fakeScreen">
+						<p class="line1_2">pesuecc~:$ingenius_hackathon</p>
+						<p class="line1_2">Upcoming Events:</p>
+						<p class="line3_4"><span id="tochange"></p>
+						<p class="line3_4">><span class="cursor4">_</span></p>
+    				</div>
+		  		</div>
+			</div>
+  		</div>
+  </div>
+</div>
+</div>
+</section>
+<!--about-->
+<br />
+<br />
+		<section class="animate__animated animate__backInRight active" id="about">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-12">
+						<h1 class="text-white bg-transparent text-center" style="font-size:200%"> About Us </h1>
+            <div class="text-white text-align-center reduce" style="color:floralwhite;">
+						<p>
+						inGenius is an annual 24-hour hackathon organised by PES University, Electronic City Campus. It is one of the most prestigious technical flagship events in India, with people all around coming together to participate. We've successfully completed 8 iterations and we're back again, ready for action!
+Circumstances may have forced us online, but that also came as a blessing in disguise. Because this time, we've upped the stakes like never before, we're going fully global this year! That's right, inGenius is open to registrations to each and anyone of you that wants to take part, wherever you are. No restrictions, no criteria, and NO FEE. Read the brochure to know more!<p class="mt-1"><a href="">brochure_link</p></a>.
+						</p>
+          </div>
+
+						<p class="mt-3 blues_text">
+						<strong>#GetSetHack</strong>
+            <!--<img src="img\getSetHack.png" class="img-fluid" width="200" height="40" />-->
+          </p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="events">
+      <div id='stars'></div>
+      <div id='stars2'></div>
+      <div id='stars3'></div>
+
+			<div class="row justify-content-center">
+			<h1 class="text-white bg-transparent text-center" style="font-size:200%"> PreHacked Events </h2>
+			</div>
+			<div class="row">
+			<div class="col-sm-12 text-align-centerjustify-content-center ">
+					<div class="container" style="filter:brightness(140%)"> <img class="card-body" src='img/timeline.svg'></div>
+			</div>
+		</section>
+
+		<section class="animate__animated animate__backInRight" id="sponsors">
+				<div class="container">
+				<div class="col-sm-12 align-content-center">
+				<h2 class="text-white text-align-center"> Our Proud Sponsors</h2><br></br>
+				<div class="row justify-content-center">
+				<h3 class="text-white display-4"> Diamond Sponsors</h3>
+				</div>
+				<div class="row justify-content-center" style="padding:20px">
+				<div class="" style="filter:brightness(140%)"> <img class="card-body bg-white" src='img/Devfolio.png'></div>
+				</div>
+				<br></br>
+				</div>
+				</div>
+				<div class="row justify-content-center">
+				<h3 class="text-white display-4 justify-content-center"> Gold Sponsors</h3>
+				</div>
+				<div class="row align-items-center justify-content-center">
+					<div class="col-sm-3 col-6 sponsors-frame">
+						<img class="card" style="border:2px solid black" src="img/matic.png" alt="Matic Logo">
+					</div>
+					<div class=" col-sm-3 col-6 sponsors-frame">
+						<img class="card" style="border:2px solid black" src="img/fold.png" alt="Fold Logo">
+					</div>
+					<div class=" col-sm-3 col-6 sponsors-frame">
+						<img class="card" style="border:2px solid black" src="img/portis.png" alt="Portis Logo">
+					</div>
+				</div>
+		</section>
+
+		<section class="animate__animated animate__backInRight" id="Organizers">
+      <div id='stars'></div>
+      <div id='stars2'></div>
+      <div id='stars3'></div>
+			<h2 class="text-white text-center">Organizers</h1>
+			<br></br>
+			<div class="container-fluid align-items-center">
+				<div class="row">
+					<div class="offset-sm-2 col-sm-5 col-6 align-self-center">
+						<img class="bg-white round" src="img/ieee.png" alt="IEEE PESIT">
+					</div>
+					<div class=" col-sm-5 col-6">
+						<img class="rounded" src="img/acm1.png" alt="ACM PESU">
+					</div>
+				</div>
+			</div>
+			</div>
+		</section>
+		<br />
+		<section class="anim_addi animate__animated animate__backInRight bg-transparent"  id="faq" >
+
+			<div class="container" style="background-color:transparent;">
+				<h2 class="text-white text-center">CODE OF CONDUCT</h2>
+				<p class="text-white text-align-center reduce" style="color:floralwhite; ">inGenius 2020 is an annual 24-hour hackathon organised by PES University, Electronic City Campus.  We are a platform for students pursuing their professional degree, to apply knowledge gained in the classroom and prototype meaningful products.
+
+As you all know by now, taking into consideration the current situation, inGenius has gone completely online for this year's iteration. However, we still aim to provide an equally pleasurable and a comparable experience to that of all our previous iterations of the event and have taken care to ensure the same.
+
+Our team is committed to providing a harassment-free experience and it's up to each one of us to respect and co-operate with each other throughout the event.
+
+Keeping that in mind, we have come up with a Code of Conduct and we advise everyone involved in the event to follow it without fail.
+
+				</p>
+			</div>
+			<div class="container">
+				<br />
+			  <div id="links">
+				<h1 class="text-white bg-transparent">FAQs </h1>
+				<div class="containerr">
+					<div class="accordions">
+						<h5>Who can attend inGenius 2020?</h5>
+						<i class="fas fa-minus"></i>
+						<i class="fas fa-plus"></i>
+					</div>
+					<div class="panal">
+						<h3 class="text-white">inGenius is open to all college students from any year, branch or degree across the globe</h3>
+					</div>
+
+					<div class="accordions">
+						<h5>Is there a registration fee?</h5>
+						<i class="fas fa-minus"></i>
+						<i class="fas fa-plus"></i>
+					</div>
+					<div class="panal">
+						<h3 class="text-white">	No, there is no registration fee</h3>
+					</div>
+
+					<div class="accordions">
+						<h5>What is the venue?</h5>
+						<i class="fas fa-minus"></i>
+						<i class="fas fa-plus"></i>
+					</div>
+					<div class="panal">
+						<h3 class="text-white">There is no venue. Due to the pandemic we are conducting the event virtually.</h3>
+					</div>
+
+					<div class="accordions">
+						<h5>What is the theme of inGenius 2020?</h5>
+						<i class="fas fa-minus"></i>
+						<i class="fas fa-plus"></i>
+					</div>
+					<div class="panal">
+						<h3 class="text-white">It's an open hack and all domains are allowed</h3>
+					</div>
+			  <div class="accordions">
+						<h5>What should I submit at the end of the hackathon?</h5>
+						<i class="fas fa-minus"></i>
+						<i class="fas fa-plus"></i>
+					</div>
+					<div class="panal">
+						<h3 class="text-white">	You will have to show a working proof of concept of your idea.</h3>
+					</div>
+			  <div class="accordions">
+						<h5>How will you judge?</h5>
+						<i class="fas fa-minus"></i>
+						<i class="fas fa-plus"></i>
+					</div>
+					<div class="panal">
+						<h3 class="text-white">	The panel of judges will consist of industry experts and professionals. They will go through the executable file and will have an interview round with top 10 teams to decide on final evaluations.	</h3>
+					</div>
+			 <div class="accordions">
+						<h5>I have a question that's not answered here</h5>
+						<i class="fas fa-minus"></i>
+						<i class="fas fa-plus"></i>
+					</div>
+					<div class="panal">
+						<h3 class="text-white">	We're here to help you however you need! Feel free to drop us an email. You could also reach out to us on Facebook or on Twitter	</h3>
+					</div>
+				</div>
+			</div>
+		</section>
+
+    <footer style="">
+      <div id="main">
+        <div id="sign" style="padding-top: 2rem;" class="d-sm-block">
+          <div id="sign_text" >
+            <span class="sign_letter">See</span><span></span> <span></span><span class="sign_letter">y</span><span>ou</span>
+            <span class="sign_letter"></span><span>.</span> <span>Soo</span><span class="sign_letter">n( )</span><span></span>
+          </div>
+        </div>
+
+        <div class="social-menu" style="margin-top: 50px;">
+      		<span>
+        <ul>
+          <li><a href="https://www.facebook.com/inGeniusHack/"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="https://twitter.com/ingeniushack?lang=en"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="https://www.instagram.com/ingeniushackathon/?hl=en"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="https://www.youtube.com/channel/UCJSynLcZyHy6VJLflYesWoQ"><i class="fa fa-youtube"></i></a></li>
+          <li><a href="https://www.linkedin.com/company/ingenius-hack/"><i class="fa fa-linkedin"></i></a></li>
+        </ul>
+      </span>
+        </div>
+
+        <div class="getset">
+          <p class="sethack">#getsethack🔥</p>
+        </div>
+
+      </div>
+
+
+<button id="btn-go-to-up" class="btn-go-to-up" title="Go To Top">
+	<i class="fa fa-hand-o-up icon-go-to-up" aria-hidden="true"></i>
+</button>
+
+
+  </footer>
+		<!-- jQuery first, then Tether, then Bootstrap JS. -->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/devfolio.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+		<script src="js/faqutil.js"></script> <!-- util functions included in the CodyHouse framework -->
+		<script src="js/faqmain.js"></script>
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+  	<script src="js/index.js"></script>
+	  <script src="js/landing.js"></script>
+	  <script src="js/buttonup.js"></script>
+	  <script src="js/animated_navbar.js"></script>
+
+    <script>
+    function terminal_disappear()
+    {
+       //console.log("close");
+       document.getElementById('terminal').style.display="none";
+    }
+      function updateTimer(deadline) {
+        var time = deadline - new Date();
+        return {
+          days: Math.floor(time / (1000 * 60 * 60 * 24)),
+          hours: Math.floor((time / (1000 * 60 * 60)) % 24),
+          minutes: Math.floor((time / 1000 / 60) % 60),
+          seconds: Math.floor((time / 1000) % 60),
+          total: time
+        };
+      }
+
+    //   function animateClock(span) {
+    //     span.className = "animate__flipOutY";
+    //     setTimeout(function () {
+    //       span.className = "";
+    //     }, 1000);
+    //   }
+
+      function startTimer(id, deadline) {
+        var timerInterval = setInterval(function () {
+          var clock = document.getElementById(id);
+          var timer = updateTimer(deadline);
+
+          clock.innerHTML =
+            "<span>" +
+            timer.days +
+            "</span>" +
+            "<span>" +
+            timer.hours +
+            "</span>" +
+            "<span>" +
+            timer.minutes +
+            "</span>" +
+            "<span>" +
+            timer.seconds +
+            "</span>";
+
+          //animation
+        //   var spans = clock.getElementsByTagName("span");
+        //   animateClock(spans[3]);
+        //   if (timer.seconds == 59) animateClock(spans[2]);
+        //   if (timer.minutes == 59 && timer.seconds == 59) animateClock(spans[1]);
+        //   if (timer.hours == 23 && timer.minutes == 59 && timer.seconds == 59)
+        //     animateClock(spans[0]);
+
+          //check for end of time
+          if (timer.total < 1) {
+            clearInterval(timerInterval);
+            clock.innerHTML =
+              "<span>0</span><span>0</span><span>0</span><span>0</span>";
+          }
+        }, 1000);
+      }
+
+      window.onload = function () {
+        var deadline = new Date("October 30, 2020 00:00:00");
+        startTimer("clock", deadline);
+
+        var today = new Date();
+  		  var aaj = today.getDate();
+			var hr = today.getHours()
+			console.log(hr)
+  		  console.log(aaj)
+  		  if (aaj>=9 && aaj<12){
+				if(aaj === 11){
+					if (hr < 19){
+  						document.getElementById("tochange").innerHTML = "Django 101,  Sept 11";
+					}
+					else{
+						document.getElementById("tochange").innerHTML = "Frontend-Backend Integration, Sept 15"
+					}
+				}
+  		  	}
+  		  if (aaj>=12 && aaj<16){
+			if(aaj === 15){
+					if (hr < 19){
+  						document.getElementById("tochange").innerHTML = "Frontend-Backend Integration, Sept 15";
+					}
+					else{
+						document.getElementById("tochange").innerHTML = "Flutter Sept 18";
+					}
+			}else{
+				document.getElementById("tochange").innerHTML = "Frontend-Backend Integration, Sept 15";
+			}
+  		  }
+  		  if (aaj>=16 && aaj<19){
+			if(aaj === 18){
+					if (hr < 19){
+  						document.getElementById("tochange").innerHTML = "Flutter Sept 18";
+					}
+					else{
+						document.getElementById("tochange").innerHTML = "ML Sept 22"
+					}
+			}else{
+				document.getElementById("tochange").innerHTML = "Flutter Sept 18";
+			}
+  		  }
+  		  if (aaj>=19 && aaj<23){
+			if(aaj === 22){
+					if (hr < 19){
+  						document.getElementById("tochange").innerHTML = "ML Sept 22"
+					}
+					else{
+						document.getElementById("tochange").innerHTML = "Neural Networks Sept 25"
+					}
+			}else{
+				document.getElementById("tochange").innerHTML = "ML Sept 22"
+			}
+  		  }
+  		  if (aaj>=23 && aaj<26){
+			if(aaj === 25){
+					if (hr < 19){
+  						document.getElementById("tochange").innerHTML = "Neural Networks Sept 25"
+					}
+					else{
+						document.getElementById("tochange").innerHTML = "ML model Sept 29"
+					}
+			}else{
+				document.getElementById("tochange").innerHTML = "Neural Networks Sept 25"
+			}
+  		  }
+  		  if (aaj>=26 && aaj<30){
+			if(aaj === 29){
+					if (hr < 19){
+  						document.getElementById("tochange").innerHTML = "ML model Sept 29"
+					}
+					else{
+						document.getElementById("tochange").innerHTML = "No upcoming events!"
+					}
+			}
+			else{
+				document.getElementById("tochange").innerHTML = "ML model Sept 29"
+			}
+  		  }
+      };
+
+	</script>
+	<script>
+		var acordion = document.getElementsByClassName('accordions');
+
+var i;
+var len = acordion.length;
+for(i = 0; i<len; i++){
+    acordion[i].addEventListener('click', function(){
+        this.classList.toggle('active');
+        var panal = this.nextElementSibling;
+        if(panal.style.maxHeight){
+            panal.style.maxHeight = null;
+        }else{
+            panal.style.maxHeight = panal.scrollHeight + 'px';
+        }
+    })
+}
+	</script>
+
+  </body>
+</html>
