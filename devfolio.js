@@ -1,11 +1,11 @@
-document.addEventListener('DOMContentLoaded', function () {
-    let devfolioOptions = {
-        buttonSelector: '#devf
-olio-apply-now',
+
+document.addEventListener('DOMContentLoaded', function (){
+    var devfolioOptions = {
+        buttonSelector: '#devfolio-apply-now',
         key: 'myhackathonkey',
     }
 
-    let script = document.createElement('script');
+    var script = document.createElement('script');
     script.src = "https://apply.devfolio.co";
     document.head.append(script);
 

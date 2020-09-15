@@ -2,12 +2,11 @@
 <html lang="en">
 
 <head>
-	<!-- Required meta tags always come first -->
+   <!-- build:css css/main.css -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <link rel="icon" href ="/img/favicon.png" type = "image/x-icon">
-	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ==" crossorigin="anonymous" />
 	<link rel="stylesheet" href ="css/button.css" />
 	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
@@ -26,7 +25,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
   <link rel="stylesheet" href="css/animated_navbar.css" />
   <link rel = "stylesheet" href = "css/faq.css"/>
-
+   <!--endbuild-->
     <title>inGenius | #GetSetHack</title>
 
 </head>
@@ -77,7 +76,6 @@
 <div id='stars'></div>
 <div id='stars2'></div>
 <div id='stars3'></div>
-</div>
 
       <div id="content">
         <div id='stars'></div>
@@ -87,7 +85,7 @@
 	  </div>
 
 <!-- landingpage -->
-    <section="landing" style="background-color:transparent;">
+    <div id="landing" style="background-color:transparent;">
     <div class="row justify-content-center">
     <div class="col-12 col-sm-6">
     <div ><h1 class="text-center" style="background-color:transparent;  font-size:300%"><strong style="color:white;">in<span style="color:#24ccff">Genius</span></strong></h1>
@@ -140,11 +138,11 @@
   </div>
 </div>
 </div>
-</section>
+</div>
 <!--about-->
 <br />
 <br />
-		<section class="animate__animated animate__backInRight active" id="about">
+		<div class="animate__animated animate__backInRight active" id="about">
 			<div class="container">
 				<div class="row justify-content-center">
 					<div class="col-12">
@@ -163,9 +161,9 @@ Circumstances may have forced us online, but that also came as a blessing in dis
 					</div>
 				</div>
 			</div>
-		</section>
+		</div>
 
-		<section id="events">
+		<div id="events">
       <div id='stars'></div>
       <div id='stars2'></div>
       <div id='stars3'></div>
@@ -177,9 +175,9 @@ Circumstances may have forced us online, but that also came as a blessing in dis
 			<div class="col-sm-12 text-align-centerjustify-content-center ">
 					<div class="container" style="filter:brightness(140%)"> <img class="card-body" src='img/timeline.svg'></div>
 			</div>
-		</section>
+		</div>
 
-		<section class="animate__animated animate__backInRight" id="sponsors">
+		<div class="animate__animated animate__backInRight" id="sponsors">
 				<div class="container">
 				<div class="col-sm-12 align-content-center">
 				<h2 class="text-white text-align-center"> Our Proud Sponsors</h2><br></br>
@@ -206,9 +204,9 @@ Circumstances may have forced us online, but that also came as a blessing in dis
 						<img class="card" style="border:2px solid black" src="img/portis.png" alt="Portis Logo">
 					</div>
 				</div>
-		</section>
+		</div>
 
-		<section class="animate__animated animate__backInRight" id="Organizers">
+		<div class="animate__animated animate__backInRight" id="Organizers">
       <div id='stars'></div>
       <div id='stars2'></div>
       <div id='stars3'></div>
@@ -225,9 +223,9 @@ Circumstances may have forced us online, but that also came as a blessing in dis
 				</div>
 			</div>
 			</div>
-		</section>
+		</div>
 		<br />
-		<section class="anim_addi animate__animated animate__backInRight bg-transparent"  id="faq" >
+		<div class="anim_addi animate__animated animate__backInRight bg-transparent"  id="faq" >
 
 			<div class="container" style="background-color:transparent;">
 				<h2 class="text-white text-center">CODE OF CONDUCT</h2>
@@ -307,7 +305,7 @@ Keeping that in mind, we have come up with a Code of Conduct and we advise every
 					</div>
 				</div>
 			</div>
-		</section>
+		</div>
 
     <footer style="">
       <div id="main">
@@ -343,9 +341,9 @@ Keeping that in mind, we have come up with a Code of Conduct and we advise every
 
 
   </footer>
-		<!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <!-- build:js js/main.js -->
 		<script src="node_modules/jquery/dist/jquery.min.js"></script>
-		<script src="/devfolio.js"></script>
+		<script src="devfolio.js"></script>
 		<script src="node_modules/tether/dist/js/tether.min.js"></script>
 		<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -359,167 +357,7 @@ Keeping that in mind, we have come up with a Code of Conduct and we advise every
 	  <script src="landing.js"></script>
 	  <script src="buttonup.js"></script>
 	  <script src="animated_navbar.js"></script>
-
-    <script>
-    function terminal_disappear()
-    {
-       //console.log("close");
-       document.getElementById('terminal').style.display="none";
-    }
-      function updateTimer(deadline) {
-        var time = deadline - new Date();
-        return {
-          days: Math.floor(time / (1000 * 60 * 60 * 24)),
-          hours: Math.floor((time / (1000 * 60 * 60)) % 24),
-          minutes: Math.floor((time / 1000 / 60) % 60),
-          seconds: Math.floor((time / 1000) % 60),
-          total: time
-        };
-      }
-
-    //   function animateClock(span) {
-    //     span.className = "animate__flipOutY";
-    //     setTimeout(function () {
-    //       span.className = "";
-    //     }, 1000);
-    //   }
-
-      function startTimer(id, deadline) {
-        var timerInterval = setInterval(function () {
-          var clock = document.getElementById(id);
-          var timer = updateTimer(deadline);
-
-          clock.innerHTML =
-            "<span>" +
-            timer.days +
-            "</span>" +
-            "<span>" +
-            timer.hours +
-            "</span>" +
-            "<span>" +
-            timer.minutes +
-            "</span>" +
-            "<span>" +
-            timer.seconds +
-            "</span>";
-
-          //animation
-        //   var spans = clock.getElementsByTagName("span");
-        //   animateClock(spans[3]);
-        //   if (timer.seconds == 59) animateClock(spans[2]);
-        //   if (timer.minutes == 59 && timer.seconds == 59) animateClock(spans[1]);
-        //   if (timer.hours == 23 && timer.minutes == 59 && timer.seconds == 59)
-        //     animateClock(spans[0]);
-
-          //check for end of time
-          if (timer.total < 1) {
-            clearInterval(timerInterval);
-            clock.innerHTML =
-              "<span>0</span><span>0</span><span>0</span><span>0</span>";
-          }
-        }, 1000);
-      }
-
-      window.onload = function () {
-        var deadline = new Date("October 30, 2020 00:00:00");
-        startTimer("clock", deadline);
-
-        var today = new Date();
-  		  var aaj = today.getDate();
-			var hr = today.getHours()
-			console.log(hr)
-  		  console.log(aaj)
-  		  if (aaj>=9 && aaj<12){
-				if(aaj === 11){
-					if (hr < 19){
-  						document.getElementById("tochange").innerHTML = "Django 101,  Sept 11";
-					}
-					else{
-						document.getElementById("tochange").innerHTML = "Frontend-Backend Integration, Sept 15"
-					}
-				}
-  		  	}
-  		  if (aaj>=12 && aaj<16){
-			if(aaj === 15){
-					if (hr < 19){
-  						document.getElementById("tochange").innerHTML = "Frontend-Backend Integration, Sept 15";
-					}
-					else{
-						document.getElementById("tochange").innerHTML = "Flutter Sept 18";
-					}
-			}else{
-				document.getElementById("tochange").innerHTML = "Frontend-Backend Integration, Sept 15";
-			}
-  		  }
-  		  if (aaj>=16 && aaj<19){
-			if(aaj === 18){
-					if (hr < 19){
-  						document.getElementById("tochange").innerHTML = "Flutter Sept 18";
-					}
-					else{
-						document.getElementById("tochange").innerHTML = "ML Sept 22"
-					}
-			}else{
-				document.getElementById("tochange").innerHTML = "Flutter Sept 18";
-			}
-  		  }
-  		  if (aaj>=19 && aaj<23){
-			if(aaj === 22){
-					if (hr < 19){
-  						document.getElementById("tochange").innerHTML = "ML Sept 22"
-					}
-					else{
-						document.getElementById("tochange").innerHTML = "Neural Networks Sept 25"
-					}
-			}else{
-				document.getElementById("tochange").innerHTML = "ML Sept 22"
-			}
-  		  }
-  		  if (aaj>=23 && aaj<26){
-			if(aaj === 25){
-					if (hr < 19){
-  						document.getElementById("tochange").innerHTML = "Neural Networks Sept 25"
-					}
-					else{
-						document.getElementById("tochange").innerHTML = "ML model Sept 29"
-					}
-			}else{
-				document.getElementById("tochange").innerHTML = "Neural Networks Sept 25"
-			}
-  		  }
-  		  if (aaj>=26 && aaj<30){
-			if(aaj === 29){
-					if (hr < 19){
-  						document.getElementById("tochange").innerHTML = "ML model Sept 29"
-					}
-					else{
-						document.getElementById("tochange").innerHTML = "No upcoming events!"
-					}
-			}
-			else{
-				document.getElementById("tochange").innerHTML = "ML model Sept 29"
-			}
-  		  }
-      };
-
-	</script>
-	<script>
-		var acordion = document.getElementsByClassName('accordions');
-
-var i;
-var len = acordion.length;
-for(i = 0; i<len; i++){
-    acordion[i].addEventListener('click', function(){
-        this.classList.toggle('active');
-        var panal = this.nextElementSibling;
-        if(panal.style.maxHeight){
-            panal.style.maxHeight = null;
-        }else{
-            panal.style.maxHeight = panal.scrollHeight + 'px';
-        }
-    })
-}
-	</script>
-
+    <script src="script.js"></script>
+  <!--endbuild-->
   </body>
 </html>

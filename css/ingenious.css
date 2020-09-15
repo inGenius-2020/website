@@ -1,6 +1,6 @@
 @font-face{font-family:"San Francisco";font-weight:400;src:url(../fonts/sanfranciscodisplay-regular-webfont.woff)}
 body{font-family:"San Francisco",Helvetica,Arial,sans-serif;font-size:24px;}
-section{padding:45px 0}
+
 .btn-primary{background-color:#6bc8b0;border-color:#6bc8b0;color:#fff!important;display:-webkit-box;display:-ms-flexbox;display:flex;overflow:hidden;position:relative;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
 .btn-primary:hover{background-color:#3fba9d;border-color:#3fba9d}
 .btn-primary:active{background-color:#3fba9d!important;border-color:#3fba9d!important}
