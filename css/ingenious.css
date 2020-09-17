@@ -141,10 +141,12 @@ body{
 }
 #formIngenius .inp{
 	width: 500px;
+	border-radius: 10px;
 }
 #formIngenius .txtar{
 	height: 250px;
 	width: 500px;
+	border-radius: 10px;
 }
 #sponsors .card{
 	position:relative;
@@ -186,11 +188,13 @@ border-radius: 40px;
     #formIngenius .inp{
         width: 300px;
         padding-left: 2rem;
-        padding-right:1.5rem;
+		padding-right:1.5rem;
+		border-radius: 10px;
     }
     #formIngenius .txtar{
         height: 250px; 
-        width: 300px;
+		width: 300px;
+		border-radius: 10px;
     }
 	#aboutusnew .card{
 		width: 90%;
