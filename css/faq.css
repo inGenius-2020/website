@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+
+.containerr{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.containerr h2{
+    position: relative;
+    width: 23rem;
+    color: hotpink;
+    margin: 20px 0;
+}
+
+.containerr h2::after{
+    position: absolute;
+    content: '';
+    width: 67px;
+    height: 2px;
+    right: 5px;
+    background-color: hotpink;
+    bottom: 0;
+}
+
+.accordions{
+    width: 100%;
+    padding: 0 5px;
+    border: 2px solid #6db5ff;
+    cursor: pointer;
+    display: flex;
+    margin: 10px 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 20px;
+    
+}
+
+.accordions i {
+    color: #6db5ff;
+    transition: all .5s ease-in;
+}
+.accordions .fa-minus{
+    display: none;
+}
+.active, .accordions:hover{
+    color: white;
+    transition: all .5s ease-in;
+}
+.active .fa-minus{
+    display: block;
+}
+.active .fa-plus{
+    display: none;
+}
+.accordions h5{
+    font-size: 20px;
+    margin: 0;
+    color: white;
+    padding-left: 5px;
+}
+.active i, .active h5 , .accordions:hover i , .accordions:hover h5{
+    color: white;
+}
+.panal{
+    padding: 0 15px;
+    border-left: 1px solid #6db5ff;
+    margin-left: 25px;
+    font-size: 14px;
+    text-align: justify;
+    overflow: hidden;
+    transition: all .5s ease-in;
+    max-height: 0;
+    color: white;
+}
+@media (max-width: 1024px){
+    .containerr{
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+    
+    .containerr h2{
+        position: relative;
+        width: 23rem;
+        color: hotpink;
+        margin: 20px 0;
+    }
+    
+    .containerr h2::after{
+        position: absolute;
+        content: '';
+        width: 67px;
+        height: 2px;
+        right: 5px;
+        background-color: hotpink;
+        bottom: 0;
+    }
+    
+    .accordions{
+        width: 100%;
+        padding: 0 5px;
+        border: 2px solid #6db5ff;
+        cursor: pointer;
+        display: flex;
+        margin: 10px 0;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        border-radius: 30px;
+        
+    }
+    
+    .accordions i {
+        color: #6db5ff;
+        transition: all .5s ease-in;
+    }
+    .accordions .fa-minus{
+        display: none;
+    }
+    .active, .accordions:hover{
+        color: white;
+        transition: all .5s ease-in;
+    }
+    .active .fa-minus{
+        display: block;
+    }
+    .active .fa-plus{
+        display: none;
+    }
+    .accordions h5{
+        font-size: 20px;
+        margin: 0;
+        color: white;
+        padding-left: 5px;
+    }
+    .active i, .active h5 , .accordions:hover i , .accordions:hover h5{
+        color: white;
+    }
+    .panal{
+        padding: 0 15px;
+        border-left: 1px solid #6db5ff;
+        margin-left: 25px;
+        font-size: 14px;
+        text-align: justify;
+        overflow: hidden;
+        transition: all .5s ease-in;
+        max-height: 0;
+        color: white;
+    }
+}

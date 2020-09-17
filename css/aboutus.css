@@ -1,0 +1,25 @@
+#aboutusnew .card{
+	position:relative;
+padding-bottom:50px;
+background: #f1f3f7;
+border-radius: 40px;
+}
+
+
+.getsethack{
+	font-size:170%;
+}
+
+
+@media (max-width: 1024px){
+#aboutusnew .card{
+	position:relative;
+	font-size:80%;
+	text-align: center;
+	padding-left:10px;
+	padding-right:10px;
+padding-bottom:50px;
+background: #f1f3f7;
+border-radius: 40px;
+}
+}

@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@900&display=swap');
+@import 'https://fonts.googleapis.com/css?family=Raleway';
+
+
+.timeline{
+  height: 60rem;
+  margin-top: 1rem;
+  margin-left: 12rem;
+
+
+
+}
+
+.timelineCard{
+width: 600px;
+height: 492px;
+right: 1000px;
+top: 100px;
+bottom:100px;
+padding-bottom:50px;
+background: #FFFFFF;
+border-radius: 70px;
+margin-left: 14rem;
+margin-top: 1rem;
+float: left;
+background-color: #F1F3F7;
+}
+.timelineheading{
+  font-family: 'Titillium Web', sans-serif;
+  margin-left: 130px;
+  margin-top: 20px;
+  padding-top: 2rem;
+  font-size: 4rem;
+}
+.timelineparagarph{
+  text-align: left;
+  font-family: 'Raleway' !important;
+  margin-top: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+  font-size: 2rem;
+}
+
+
+
+
+@media (max-width: 1028px) {
+
+  .timeline{
+    height: 40rem;
+    margin-top: 3rem;
+    margin-left: 2rem;
+
+  }
+
+  .timelineCard{
+  width: 35rem;
+  height: 60rem;
+  right: 1000px;
+  top: 100px;
+  bottom:100px;
+  padding-bottom:50px;
+  background: #FFFFFF;
+  border-radius: 70px;
+  margin-top: 1rem;
+  margin-left: 2rem;
+  }
+  .timelineheading{
+    font-family: 'Titillium Web', sans-serif;
+    margin-left: 4rem;
+    margin-top: 20px;
+    padding-top: 2rem;
+    font-size: 3rem;
+  }
+  .timelineparagarph{
+    text-align: left;
+    font-family: 'Raleway' !important;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: 2rem;
+  }
+
+
+}
+
+@media (max-width: 360px) {
+
+  .timeline{
+    height: 35rem;
+    margin-top: 3rem;
+    margin-left: 1rem;
+
+  }
+
+  .timelineCard{
+  width: 28rem;
+  height: 55rem;
+  right: 1000px;
+  top: 100px;
+  bottom:100px;
+  padding-bottom:50px;
+  background: #FFFFFF;
+  border-radius: 40px;
+  margin-top: 1rem;
+  margin-left: 2rem;
+  }
+  .timelineheading{
+    font-family: 'Titillium Web', sans-serif;
+    margin-left: 5rem;
+    margin-top: 20px;
+    padding-top: 2rem;
+    font-size: 2rem;
+  }
+  .timelineparagarph{
+    text-align: left;
+    font-family: 'Raleway' !important;
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 1.8rem;
+  }
+
+
+
+}
+
+@media (max-width: 1025px) {
+
+  .timeline{
+    height: 38rem;
+    margin-top: 3rem;
+    margin-left: 1rem;
+
+  }
+
+  .timelineCard{
+  width: 31rem;
+  height: 55rem;
+  right: 1000px;
+  top: 100px;
+  bottom:100px;
+  padding-bottom:50px;
+  background: #FFFFFF;
+  border-radius: 40px;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  }
+  .timelineheading{
+    font-family: 'Titillium Web', sans-serif;
+    margin-left: 5rem;
+    margin-top: 20px;
+    padding-top: 2rem;
+    font-size: 2rem;
+  }
+  .timelineparagarph{
+    text-align: left;
+    font-family: 'Raleway' !important;
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 1.8rem;
+  }
+
+
+
+}

@@ -1,0 +1,246 @@
+@font-face{font-family:"San Francisco";font-weight:400;src:url(../fonts/sanfranciscodisplay-regular-webfont.woff)}
+body{font-family:"San Francisco",Helvetica,Arial,sans-serif;font-size:24px;}
+section{padding:80px 0;}
+.btn-primary{background-color:#6bc8b0;border-color:#6bc8b0;color:#fff!important;display:-webkit-box;display:-ms-flexbox;display:flex;overflow:hidden;position:relative;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
+.btn-primary:hover{background-color:#3fba9d;border-color:#3fba9d}
+.btn-primary:active{background-color:#3fba9d!important;border-color:#3fba9d!important}
+.btn-primary.btn-lg{font-size:20px;font-weight:700;letter-spacing:2px}
+.btn-primary.disabled{background-color:#6bc8b0!important;border-color:#6bc8b0!important}
+.btn-primary svg{fill:#fff!important}.btn-primary:disabled{background-color:#6bc8b0!important;border-color:#6bc8b0!important}
+h2{font-size:48px}
+
+.card{
+	max-width:100%;
+}
+
+.ti{
+    padding-bottom: 5rem; padding-left:2rem;
+}
+
+body{
+	overflow-x:hidden !important;
+	align-content:center ! important;
+	justify-content: center !important;
+}
+
+#formIngenius{
+    padding-left: 20%;
+}
+#formIngenius .inp{
+    width: 500px;
+}
+#formIngenius .txtar{
+    height: 250px; 
+    width: 500px;
+}
+
+.responsive{
+	width:100%;
+	height:auto;
+}
+
+#cta{background-color:#fff9f0;padding:64px 0}
+#codeOfConduct{background-color:#fff9f0}
+#codeOfConduct .section-heading{color:#e15841}
+.flex-center{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
+header{background-color:#fffbf3;padding-bottom:96px}
+header .hero-image{overflow:hidden}
+header .header-text .title{color:#312457}
+header .header-text .subtitle{color:#8166cd;font-size:14px;font-weight:700;letter-spacing:5px;text-transform:uppercase}
+header .hero-container{min-width:1600px;width:100%;margin-left:50%;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%)}
+header #heroImage{position:relative}
+header #heroImage .background{width:100%}
+header #heroImage .art-item{position:absolute;height:auto}
+header #heroImage .art-item.circle{width:4.5%}
+header #heroImage .art-item.circle.big{width:5.5%}
+header #heroImage .art-item.circle.c1{top:70%;left:1%}
+header #heroImage .art-item.circle.c2{top:56%;left:2%}
+header #heroImage .art-item.circle.c3{top:15%;left:8%}
+header #heroImage .art-item.circle.c4{top:5%;left:11%}
+header #heroImage .art-item.circle.c5{top:30%;left:14%}
+header #heroImage .art-item.circle.c6{top:4%;left:18%}
+header #heroImage .art-item.circle.c7{top:64%;left:20%}
+header #heroImage .art-item.circle.c8{top:40%;left:28%}
+header #heroImage .art-item.circle.c9{top:12%;left:27%}
+header #heroImage .art-item.circle.c10{top:57%;left:45%}
+header #heroImage .art-item.circle.c11{top:64%;left:60%}
+header #heroImage .art-item.circle.c12{top:21%;left:70%}
+header #heroImage .art-item.circle.c13{top:72%;left:96%}
+header #heroImage .art-item.box{width:6.5%}
+header #heroImage .art-item.box.b1{top:54%;left:24.5%}
+header #heroImage .art-item.box.b2{top:2%;left:34%}
+header #heroImage .art-item.box.b3{top:26%;left:81%}
+header #heroImage .art-item.box.b4{top:5%;left:83%}
+header #heroImage .art-item.vehicle{width:11%}
+header #heroImage .art-item.vehicle.v1{top:38%;left:3%}
+header #heroImage .art-item.vehicle.v2{top:32%;left:89%}
+header #heroImage .art-item.wifi{width:1.2%}
+header #heroImage .art-item.wifi.w1{top:59.5%;left:8.7%}
+header #heroImage .art-item.wifi.w2{top:2.5%;left:49.5%}
+header #heroImage .art-item.wifi.w2 path{-webkit-animation-delay:1s!important;animation-delay:1s!important}
+header #heroImage .art-item.wifi.w3{top:21.5%;left:89.25%}
+header #heroImage .art-item.wifi.w3 path{-webkit-animation-delay:2s!important;animation-delay:2s!important}
+header #heroImage .art-item.wifi path:nth-child(1){-webkit-animation:blink-1 5s linear infinite alternate;animation:blink-1 5s linear infinite alternate}
+header #heroImage .art-item.wifi path:nth-child(2){-webkit-animation:blink-2 5s linear infinite alternate;animation:blink-2 5s linear infinite alternate}.timer-text{color:#8166cd;font-size:18px;margin-top:8px;text-align:center}@-webkit-keyframes blink-1{0%{visibility:hidden}25%{visibility:visible}50%{visibility:hidden}75%{visibility:hidden}100%{visibility:hidden}}@keyframes blink-1{0%{visibility:hidden}25%{visibility:visible}50%{visibility:hidden}75%{visibility:hidden}100%{visibility:hidden}}@-webkit-keyframes blink-2{0%{visibility:visible}25%{visibility:visible}50%{visibility:hidden}75%{visibility:hidden}100%{visibility:visible}}@keyframes blink-2{0%{visibility:visible}25%{visibility:visible}50%{visibility:hidden}75%{visibility:hidden}100%{visibility:visible}}.fill{display:none}.apply-btn.disabled>.fill{background-color:#3fba9d!important;border:1px solid #3fba9d!important;-webkit-box-sizing:unset;box-sizing:unset;display:block;height:100%;left:-1px;position:absolute;top:-1px;z-index:-1;-webkit-animation:fillprogress 40s;animation:fillprogress 40s;-webkit-transition:all .2s ease-out;-o-transition:all .2s ease-out;transition:all .2s ease-out}@-webkit-keyframes fillprogress{from{width:0}to{width:100%}}@keyframes fillprogress{from{width:0}to{width:100%}}
+
+#aboutusnew .card{
+	position:relative;
+padding-bottom:50px;
+background: #f1f3f7;
+border-radius: 40px;
+}
+
+body{
+	align-items: center;
+}
+.ingcoc{
+	width: 600px;
+	height: 412px;
+	color: white;
+	padding-left: 50px;
+
+	background:black;
+
+	border-radius: 70px;
+}
+.ingcoc2{
+	width: 300px;
+	height: 412px;
+	color: white;
+	padding-left: 30px;
+
+	background:black;
+
+	border-radius: 70px;
+}
+
+.getsethack{
+	font-size:170%;
+}
+
+ .mainimg{
+			height:200px;
+			width:500px;
+	}
+
+#formIng {
+	margin: 0 0 0 0 !important;
+	padding: 0 0 0 0 !important;
+}
+#codeofconduct .card{
+	padding-bottom:50px;
+	background: #FFFFFF;
+	border-radius: 40px;
+	align-content: left;
+	}
+#cod .col{
+	align-content: left;
+}
+#formIngenius{
+	padding-left: 20%;
+}
+#formIngenius .inp{
+	width: 500px;
+}
+#formIngenius .txtar{
+	height: 250px;
+	width: 500px;
+}
+#sponsors .card{
+	position:relative;
+padding-bottom:50px;
+background: #f1f3f7;
+border-radius: 40px;
+}
+
+@media (max-width: 1024px){
+    .mainimg{
+			height:100px;
+			width:250px;
+	}
+
+	.getsethack{
+		font-size:95%;
+	}
+	.applybutton{
+		padding-top:20px;
+		padding-bottom: 30px;
+	}
+	.count1{
+		font-size:200% ! important;
+	}
+
+	#landing{
+		padding-top:50px;
+		padding-bottom: 50 px;
+	}
+	#dvf{
+		display: none;
+	}
+	#we{
+		display: none;
+	}
+	#formIngenius{
+        padding-left: 0%;
+    }
+    #formIngenius .inp{
+        width: 300px;
+        padding-left: 2rem;
+        padding-right:1.5rem;
+    }
+    #formIngenius .txtar{
+        height: 250px; 
+        width: 300px;
+    }
+	#aboutusnew .card{
+		width: 90%;
+		font-size:80%;
+		margin-right: 10rem;
+		text-align: center;
+		padding-left:10px;
+		padding-right:10px;
+	padding-bottom:50px;
+	background: #f1f3f7;
+	border-radius: 40px;
+		margin-left: 1rem;
+	}
+	#codeofconduct h1{
+		text-align: center;
+	}
+	.butan{
+		margin-left: 9rem;
+	}
+	#sponsors .card{
+		width: 31rem;
+		margin-top: 52rem;
+		font-size:80%;
+		text-align: center;
+		padding-left:10px;
+		padding-right:10px;
+	padding-bottom:50px;
+	background: #f1f3f7;
+	border-radius: 40px;
+	margin-left: 1rem;
+	padding-top: 10px;
+	}
+
+	#codeofconduct .card{
+		padding-bottom:50px;
+		background: #FFFFFF;
+		border-radius: 40px;
+		align-content: left;
+		width: 31rem;
+		margin-left: 1rem;
+		}
+		
+	.ti{
+  color: #fff;
+  padding-bottom: 5px;
+  padding-left: 3rem;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+    }
+	
+	
+}
+
