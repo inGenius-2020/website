@@ -117,7 +117,15 @@ html, body{
   -webkit-text-fill-color: transparent;
 }
 
+#timelinesvg {
+  padding-top : 10px;
+}
+
 @media only screen and (max-width: 760px) {
+  #timelinesvg {
+    padding-top:80px;
+  }
+  
   .nav-item { border-bottom: 1px solid white; padding:20px}
     html {
     overflow-x: hidden;}
