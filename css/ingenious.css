@@ -154,6 +154,15 @@ padding-bottom:50px;
 background: #f1f3f7;
 border-radius: 40px;
 }
+#formIngenius .card{
+	padding-bottom:50px;
+	background: none;
+	border-radius: 40px;
+	align-content: left;
+	}
+	.dd{
+		margin-left:-130px;
+	}
 
 @media (max-width: 1024px){
     .mainimg{
@@ -257,6 +266,8 @@ border-radius: 40px;
 	#getset .card{
 		width: 90%;
 	}
-	
+	.dd{
+		margin-left: unset;
+	}
 }
 
