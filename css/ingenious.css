@@ -35,8 +35,9 @@ body{
 }
 
 .responsive{
-	width:100%;
-	height:auto;
+	height:200px;
+	width:200px;
+	
 }
 
 #cta{background-color:#fff9f0;padding:64px 0}
@@ -275,6 +276,11 @@ border-radius: 40px;
 	}
 	.stream{
 		font-size:80%;
+	}
+	.responsive{
+		height: 100px;
+		width:250px;
+		
 	}
 }
 
