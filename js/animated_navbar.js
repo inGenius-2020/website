@@ -15,7 +15,7 @@
   $(document).scroll(function() {
       if($(document).scrollTop()>15){
         $('.anim_addi').removeClass('d-none');
-        console.log("here");
+        //console.log("here");
       }
       else{
           $('.anim_addi').addClass('d-none');
