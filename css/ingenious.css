@@ -39,6 +39,10 @@ body{
 	width:180px;
 	
 }
+.fold{
+	height: 180px;
+	width:180px;
+}
 
 #cta{background-color:#fff9f0;padding:64px 0}
 #codeOfConduct{background-color:#fff9f0}
@@ -281,6 +285,10 @@ border-radius: 40px;
 		height: 100px;
 		width:250px;
 		
+	}
+	.fold{
+		height: 100px;
+		width:250px;
 	}
 }
 
