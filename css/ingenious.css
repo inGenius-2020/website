@@ -269,5 +269,12 @@ border-radius: 40px;
 	.dd{
 		margin-left: unset;
 	}
+	#sponsors .img{
+		height:180px;
+		width: 180px;
+	}
+	.stream{
+		font-size:80%;
+	}
 }
 
