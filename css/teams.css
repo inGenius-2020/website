@@ -6,7 +6,9 @@ body,html{
 	border-radius:50% !important;
 	padding-top:40px !important;
 }
-
+.card{
+	background:white !important;
+}
 .team_link{
 	position: center;
   display: block;
