@@ -168,6 +168,9 @@ border-radius: 40px;
 	.dd{
 		margin-left:-130px;
 	}
+	.contacts{
+		padding-left: 100px;
+	}
 
 @media (max-width: 1024px){
     .mainimg{
@@ -290,5 +293,16 @@ border-radius: 40px;
 		height: 100px;
 		width:250px;
 	}
+	.contacts{
+		padding-left: unset;
+	}
 }
 
+@media (max-width: 1350px){
+	#we{
+		display: none;
+	}
+	.contacts{
+		padding-left: unset;
+	}
+}
