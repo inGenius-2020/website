@@ -40,6 +40,7 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+
 html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -61,6 +62,7 @@ body {
 
 [tabindex="-1"]:focus {
   outline: 0 !important; }
+
 
 hr {
   -webkit-box-sizing: content-box;
@@ -3791,7 +3793,7 @@ input[type="button"].btn-block {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #fff;
+  background-color: #0b0c12;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem; }
@@ -9856,4 +9858,9 @@ textarea.form-control {
 #footer{
       padding: 7% 15%;
       text-align: center;
+}
+@media (max-width: 1024px){
+    #hatao {
+      height:290px;
+    }
 }
