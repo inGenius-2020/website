@@ -147,13 +147,13 @@ div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after
     .nav div.main_list ul li a {
         text-align: center;
         width: 100%;
-        font-size: 3rem;
+        font-size: 2.2rem;
         padding: 20px;
     }
     .nav div.media_button {
         display: block;
     }
-    .nav-item { border-bottom: 1px solid white; padding:20px}
+    .nav-item { border-bottom: 1px solid white; padding:17px}
      html {
       overflow-x: hidden;} /*bug*/
 
@@ -355,4 +355,8 @@ div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after
 .img-thumbnail{
   background-color: transparent;
   border:0px;
+}
+
+@media (max-width:1024px){
+    .nav-item { border-bottom: 1px solid white; padding:17px;}
 }

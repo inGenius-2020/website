@@ -200,7 +200,7 @@ border-radius: 40px;
 		display: none;
 	}
 	#formIngenius{
-        padding-left: 0%;
+        padding-left: 0px;
     }
     #formIngenius .inp{
         width: 300px;
@@ -294,7 +294,7 @@ border-radius: 40px;
 		width:250px;
 	}
 	.contacts{
-		padding-left: unset;
+		padding-left: 20px;
 	}
 }
 
