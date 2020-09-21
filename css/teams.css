@@ -1,5 +1,5 @@
 body,html{
-	margin: 0 auto;
+	margin: 0 auto !important;
 }
 
 .img{
@@ -8,6 +8,8 @@ body,html{
 }
 .card{
 	background:white !important;
+	border:5px solid !important;
+	padding-top:20px;
 }
 .team_link{
 	position: center;
@@ -32,6 +34,10 @@ body,html{
 
 /* Display the columns below each other instead of side by side on small screens */
 @media screen and (max-width: 650px) {
+	.card{
+		padding-top:20px !important;
+		padding-bottom:20px !important;
+	}
   .column {
 	padding-left:10px;
 	padding-right:10px;
