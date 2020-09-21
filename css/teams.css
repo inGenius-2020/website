@@ -10,6 +10,7 @@ body,html{
 	background:white !important;
 	border:5px solid !important;
 	padding-top:20px;
+	align-self:center;
 }
 .team_link{
 	position: center;
