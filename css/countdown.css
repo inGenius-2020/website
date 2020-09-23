@@ -28,7 +28,7 @@
 
 .smalltext{
 	padding-top: 5px;
-	font-size: 16px;
+	font-size: 18px !important;
 }
 
 @media (max-height:1024px){
