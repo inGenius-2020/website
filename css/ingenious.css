@@ -30,14 +30,14 @@ body{
     width: 500px;
 }
 #formIngenius .txtar{
-    height: 250px; 
+    height: 250px;
     width: 500px;
 }
 
 .responsive{
 	height:180px;
 	width:180px;
-	
+
 }
 .fold{
 	height: 180px;
@@ -209,7 +209,7 @@ border-radius: 40px;
 		border-radius: 10px;
     }
     #formIngenius .txtar{
-        height: 250px; 
+        height: 250px;
 		width: 300px;
 		border-radius: 10px;
     }
@@ -230,7 +230,8 @@ border-radius: 40px;
 		padding-bottom: 70px;
 	}
 	.butan{
-		margin-left: 2rem;
+		margin-left: 3em;
+		margin-right: 40px;
 	}
 	#sponsors .card{
 		width: 90%;
@@ -254,7 +255,7 @@ border-radius: 40px;
 		width: 90%;
 		margin-left: 1rem;
 		}
-		
+
 	.ti{
   color: #fff;
   padding-bottom: 5px;
@@ -287,7 +288,7 @@ border-radius: 40px;
 	.responsive{
 		height: 100px;
 		width:250px;
-		
+
 	}
 	.fold{
 		height: 100px;
@@ -327,7 +328,7 @@ border-radius: 40px;
 		width: 120px;
 	}
 }
-
+/*moto*/
 @media (max-width: 360px){
 	.responsive{
 		height: 100px;

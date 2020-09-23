@@ -125,7 +125,14 @@ html, body{
   #timelinesvg {
     padding-top:80px;
   }
-  
+  .stream{
+    padding-left:15px;
+    align:center;
+  }
+  .dev-btn{
+    
+  }
+
   .nav-item { border-bottom: 1px solid white; padding:20px}
     html {
     overflow-x: hidden;}
@@ -147,6 +154,7 @@ html, body{
     .remove_padding{
       padding-top:0px;
     }
+
   }
 
 /* copy and paste the animation inside all 3 elements */
