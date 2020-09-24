@@ -98,6 +98,9 @@ border-radius: 40px;
 body{
 	align-items: center;
 }
+.butan{
+	margin-left: 1.6rem;
+}
 .ingcoc{
 	width: 600px;
 	height: 412px;
@@ -230,8 +233,8 @@ border-radius: 40px;
 		padding-bottom: 70px;
 	}
 	.butan{
-		margin-left: 3em;
-		margin-right: 40px;
+		margin-left: 6.7rem;
+	
 	}
 	#sponsors .card{
 		width: 90%;
@@ -327,6 +330,10 @@ border-radius: 40px;
 		height: 120px;
 		width: 120px;
 	}
+	.butan{
+		margin-left: 8rem;
+	
+	}
 }
 /*moto*/
 @media (max-width: 360px){
@@ -334,4 +341,8 @@ border-radius: 40px;
 		height: 100px;
 		width: 250px;
 	}
+	.butan{
+		margin-left: 6rem;
+	}
+}
 }
