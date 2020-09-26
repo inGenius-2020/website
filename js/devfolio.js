@@ -1,8 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     let devfolioOptions = {
-        buttonSelector: '#devf
-olio-apply-now',
-        key: 'myhackathonkey',
+        buttonSelector: '#devfolio-apply-now',
+        key: 'ingenius',
     }
 
     let script = document.createElement('script');
