@@ -15,7 +15,6 @@
     font-weight: 600 !important;
     padding: 12px 20px !important;
     text-align: center !important;
-    text-transform: lowercase !important;
 }
 
 #devfolio-apply-now:not([disabled]) {
