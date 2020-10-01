@@ -24,3 +24,7 @@
 #devfolio-apply-now:hover {
     background-color: #2954BF !important;
 }
+
+#devfolio-applynow-modal-container{
+	overflow-x:hidden;
+}
