@@ -18,3 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 });
+
+
+document.querySelector("#devfolio-applynow-modal-container").styles.width=screen.width;
+console.log("js server erroe",document.querySelector("#devfolio-applynow-modal-container").styles.width)
