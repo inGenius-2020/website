@@ -35,6 +35,30 @@
   font-size: 2rem;
 }
 
+.videoContainer{
+  text-align: center;
+
+}
+.PromoText{
+  z-index: 9;
+  position: absolute;
+  left: 720px;
+  transform: rotate(30deg);
+  padding-right: 68px;
+  left: 720px;
+  padding-top: 20px;
+
+}
+.mobileHide { display: inline;}
+   /* Smartphone Portrait and Landscape */
+@media only screen
+  and (min-device-width : 160px)
+  and (max-device-width : 1025px){  .mobileHide { display: none;} }
+
+@media only screen
+    and (min-device-width : 1026px)
+    and (max-device-width : 1360px){  .PromoText { left: 670px;} }
+
 @media (max-width: 1028px) {
   .timeline {
     height: 40rem;
