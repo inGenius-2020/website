@@ -16,6 +16,13 @@ h2{font-size:48px}
 .ti{
     padding-bottom: 5rem; padding-left:2rem;
 }
+#fixedbutton{
+	 position: fixed;
+    bottom: 0px;
+    right: 2px; 
+	font-size:22px;
+	border-radius:5px;
+}
 
 body{
 	overflow-x:hidden !important;
