@@ -16,6 +16,9 @@ h2{font-size:48px}
 .ti{
     padding-bottom: 5rem; padding-left:2rem;
 }
+#sponsors a{
+	padding:10px 0px;
+}
 #fixedbutton{
 	 position: fixed;
     bottom: 0px;
