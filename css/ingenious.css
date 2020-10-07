@@ -26,7 +26,17 @@ h2{font-size:48px}
 	font-size:22px;
 	border-radius:5px;
 }
+.buttoncrio {
+  background-color:white;
+}
+.buttoncrio {
+  transition-duration: 0.4s;
+}
 
+.buttoncrio:hover {
+  background-color:black;
+  color: white;
+}
 body{
 	overflow-x:hidden !important;
 	align-content:center ! important;
