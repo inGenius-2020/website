@@ -22,7 +22,7 @@ h2{font-size:48px}
 #fixedbutton{
 	 position: fixed;
     bottom: 0px;
-    right: 2px; 
+    right: 1px; 
 	font-size:22px;
 	border-radius:5px;
 }
