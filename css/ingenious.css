@@ -25,6 +25,7 @@ h2{font-size:48px}
     right: 1px; 
 	font-size:22px;
 	border-radius:5px;
+	z-index:10000000;
 }
 .buttoncrio {
   background-color:white;
@@ -211,7 +212,9 @@ border-radius: 40px;
 	.count1{
 		font-size:200% ! important;
 	}
-
+	#ibd{
+		display:none;
+	}
 	#landing{
 		padding-top:50px;
 		padding-bottom: 50 px;
@@ -363,6 +366,9 @@ padding-left: 10px;
 	}
 	.butan{
 		margin-left: 6rem;
+	}
+	#ibd{
+		display:none;
 	}
 }
 }
