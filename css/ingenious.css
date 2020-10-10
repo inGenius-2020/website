@@ -27,6 +27,19 @@ h2{font-size:48px}
 	border-radius:5px;
 	z-index:10000000;
 }
+
+#fixedbutton1{
+	 position: fixed;
+    bottom: 0px;
+    right: 0px; 
+	font-size:22px;
+	border-radius:5px;
+	z-index:10000000;
+}
+.diamonds{
+	padding-bottom:10px !important;
+}
+
 .buttoncrio {
   background-color:white;
 }
@@ -38,6 +51,19 @@ h2{font-size:48px}
   background-color:transparent;
   color: white;
 }
+
+.buttondisc {
+  background-color:white;
+}
+.buttondisc {
+  transition-duration: 0.4s;
+}
+
+.buttondisc:hover {
+  background-color:transparent;
+  color: white;
+}
+
 body{
 	overflow-x:hidden !important;
 	align-content:center ! important;
